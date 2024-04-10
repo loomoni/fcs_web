@@ -14,10 +14,10 @@
     <!-- Open Graph Meta-->
     <meta property="og:type" content="website">
     <meta property="og:site_name" content="Admin">
-    <meta property="og:title" content="Aznas arts work">
-    <meta property="og:url" content="https://aznasartscentre.co.tz/">
-    <meta property="og:image" content="https://aznasartscentre.co.tz/">
-    <meta property="og:description" content="Aznas art work working Web">
+    <meta property="og:title" content="F C S">
+    <meta property="og:url" content="https://F C S.co.tz/">
+    <meta property="og:image" content="https://F C S.co.tz/">
+    <meta property="og:description" content="F C S">
     <title>@yield('title')F C S</title>
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">

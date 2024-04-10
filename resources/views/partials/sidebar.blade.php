@@ -21,8 +21,8 @@
 
         <li class="treeview "><a class="app-menu__item {{ request()->is('about-us*') ? 'active' : ''}}" href="#" data-toggle="treeview"><i class="app-menu__icon fa fa-sitemap"></i><span class="app-menu__label">About Us</span><i class="treeview-indicator fa fa-angle-right"></i></a>
             <ul class="treeview-menu">
-                <li><a class="treeview-item " href="{{ url('about-us/create') }}"><i class="icon fa fa-plus"></i>Create About us</a></li>
-                <li><a class="treeview-item" href="{{ url('about-us') }}"><i class="icon fa fa-edit"></i>Manage About us</a></li>
+                <li><a class="treeview-item " href="{{ url('about-us/create') }}"><i class="icon fa fa-plus"></i>Create</a></li>
+                <li><a class="treeview-item" href="{{ url('about-us') }}"><i class="icon fa fa-edit"></i>Manage</a></li>
             </ul>
         </li>
 

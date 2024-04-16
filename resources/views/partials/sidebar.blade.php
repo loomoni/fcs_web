@@ -69,14 +69,14 @@
 
         <li class="treeview"><a class="app-menu__item {{ request()->is('grants*') ? 'active' : ''}}" href="#" data-toggle="treeview"><i class="app-menu__icon fa fa-users"></i><span class="app-menu__label">Grants</span><i class="treeview-indicator fa fa-angle-right"></i></a>
             <ul class="treeview-menu">
-                <li><a class="treeview-item" href="{{ url('grants/create' )}}"><i class="icon fa fa-circle-o"></i> Add Customer</a></li>
-                <li><a class="treeview-item" href="{{ url('grants') }}"><i class="icon fa fa-circle-o"></i> Manage Customer</a></li>
+                <li><a class="treeview-item" href="{{ url('grants/create' )}}"><i class="icon fa fa-plus"></i> Add Customer</a></li>
+                <li><a class="treeview-item" href="{{ url('grants') }}"><i class="icon fa fa-edit"></i> Manage Customer</a></li>
             </ul>
         </li>
         <li class="treeview"><a class="app-menu__item {{ request()->is('customer*') ? 'active' : ''}}" href="#" data-toggle="treeview"><i class="app-menu__icon fa fa-users"></i><span class="app-menu__label">System Users</span><i class="treeview-indicator fa fa-angle-right"></i></a>
             <ul class="treeview-menu">
-                <li><a class="treeview-item" href="{{ url('customer/create' )}}"><i class="icon fa fa-circle-o"></i> Add Customer</a></li>
-                <li><a class="treeview-item" href="{{ url('customer') }}"><i class="icon fa fa-circle-o"></i> Manage Customer</a></li>
+                <li><a class="treeview-item" href="{{ url('customer/create' )}}"><i class="icon fa fa-plus"></i> Add Customer</a></li>
+                <li><a class="treeview-item" href="{{ url('customer') }}"><i class="icon fa fa-edit"></i> Manage Customer</a></li>
             </ul>
         </li>
 

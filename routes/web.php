@@ -4,7 +4,9 @@ use App\Http\Controllers\Backend\Aboutus\AboutUsController;
 use App\Http\Controllers\Backend\Aboutus\CoresValuesController;
 use App\Http\Controllers\Backend\Blog\BlogController;
 use App\Http\Controllers\Backend\Client\OurClientController;
+use App\Http\Controllers\Backend\Contact\ContactsInformationController;
 use App\Http\Controllers\Backend\Faq\FaqController;
+use App\Http\Controllers\Backend\Grants\GrantsController;
 use App\Http\Controllers\Backend\HomeController;
 use App\Http\Controllers\Backend\Team\TeamController;
 use App\Http\Controllers\Frontend\Auth\AuthController;
@@ -79,6 +81,22 @@ Route::group(['middleware' => 'auth'], function() {
     Route::get('our-client/edit/{id}', [OurClientController::class, 'edit']);
     Route::post('our-client/edit/{id}', [OurClientController::class, 'update']);
     Route::get('our-client/delete/{id}', [OurClientController::class, 'delete']);
+
+    //Contant information route
+    Route::get('contacts', [ContactsInformationController::class, 'index']);
+    Route::get('contacts/create', [ContactsInformationController::class, 'Create']);
+    Route::post('contacts/create', [ContactsInformationController::class, 'Store']);
+    Route::get('contacts/edit/{id}', [ContactsInformationController::class, 'edit']);
+    Route::post('contacts/edit/{id}', [ContactsInformationController::class, 'update']);
+    Route::get('contacts/delete/{id}', [ContactsInformationController::class, 'delete']);
+
+    //grants route
+    Route::get('grants', [GrantsController::class, 'index']);
+    Route::get('grants/create', [GrantsController::class, 'Create']);
+    Route::post('grants/create', [GrantsController::class, 'Store']);
+    Route::get('grants/edit/{id}', [GrantsController::class, 'edit']);
+    Route::post('grants/edit/{id}', [GrantsController::class, 'update']);
+    Route::get('grants/delete/{id}', [GrantsController::class, 'delete']);
 
 
     

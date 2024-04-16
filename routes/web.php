@@ -5,6 +5,7 @@ use App\Http\Controllers\Backend\Aboutus\CoresValuesController;
 use App\Http\Controllers\Backend\Blog\BlogController;
 use App\Http\Controllers\Backend\Faq\FaqController;
 use App\Http\Controllers\Backend\HomeController;
+use App\Http\Controllers\Backend\Team\TeamController;
 use App\Http\Controllers\Frontend\Auth\AuthController;
 use Illuminate\Support\Facades\Route;
 
@@ -61,6 +62,14 @@ Route::group(['middleware' => 'auth'], function() {
     Route::get('values/edit/{id}', [CoresValuesController::class, 'edit']);
     Route::post('values/edit/{id}', [CoresValuesController::class, 'update']);
     Route::get('values/delete/{id}', [CoresValuesController::class, 'delete']);
+
+    //Team route
+    Route::get('team', [TeamController::class, 'index']);
+    Route::get('team/create', [TeamController::class, 'Create']);
+    Route::post('team/create', [TeamController::class, 'Store']);
+    Route::get('team/edit/{id}', [TeamController::class, 'edit']);
+    Route::post('team/edit/{id}', [TeamController::class, 'update']);
+    Route::get('team/delete/{id}', [TeamController::class, 'delete']);
 
 
     

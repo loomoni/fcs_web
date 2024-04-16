@@ -26,16 +26,23 @@
             </ul>
         </li>
 
-        <li class="treeview"><a class="app-menu__item {{ request()->is('our-services*') ? 'active' : ''}}" href="#" data-toggle="treeview"><i class="app-menu__icon fa fa-cube"></i><span class="app-menu__label">Our Services</span><i class="treeview-indicator fa fa-angle-right"></i></a>
-            <ul class="treeview-menu">
-                <li><a class="treeview-item" href="{{url('our-services/create')}}"><i class="icon fa fa-plus"></i> New Service</a></li>
-                <li><a class="treeview-item" href="{{url('our-services')}}"><i class="icon fa fa-edit"></i> Manage Services</a></li>
-            </ul>
-        </li>
         <li class="treeview"><a class="app-menu__item {{ request()->is('values*') ? 'active' : ''}}" href="#" data-toggle="treeview"><i class="app-menu__icon fa fa-low-vision"></i><span class="app-menu__label">Core Values</span><i class="treeview-indicator fa fa-angle-right"></i></a>
             <ul class="treeview-menu">
                 <li><a class="treeview-item" href="{{url('values/create')}}"><i class="icon fa fa-plus"></i> Add Values</a></li>
                 <li><a class="treeview-item" href="{{url('values')}}"><i class="icon fa fa-edit"></i> Manage Values</a></li>
+            </ul>
+        </li>
+
+        <li class="treeview"><a class="app-menu__item {{ request()->is('blog*') ? 'active' : ''}}" href="#" data-toggle="treeview"><i class="app-menu__icon fa fa-cube"></i><span class="app-menu__label">Blogs</span><i class="treeview-indicator fa fa-angle-right"></i></a>
+            <ul class="treeview-menu">
+                <li><a class="treeview-item" href="{{url('blog/create')}}"><i class="icon fa fa-plus"></i> New Blog</a></li>
+                <li><a class="treeview-item" href="{{url('blog')}}"><i class="icon fa fa-edit"></i> Manage Blog</a></li>
+            </ul>
+        </li>
+        <li class="treeview"><a class="app-menu__item {{ request()->is('faq*') ? 'active' : ''}}" href="#" data-toggle="treeview"><i class="app-menu__icon fa fa-low-vision"></i><span class="app-menu__label">FAQ</span><i class="treeview-indicator fa fa-angle-right"></i></a>
+            <ul class="treeview-menu">
+                <li><a class="treeview-item" href="{{url('faq/create')}}"><i class="icon fa fa-plus"></i> Add FAQ</a></li>
+                <li><a class="treeview-item" href="{{url('faq')}}"><i class="icon fa fa-edit"></i> Manage FAQ</a></li>
             </ul>
         </li>
 

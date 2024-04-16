@@ -1,18 +1,18 @@
 @extends('layouts.master')
 
-@section('title', 'About Us | ')
+@section('title', 'Blog | ')
 @section('content')
     @include('partials.header')
     @include('partials.sidebar')
     <main class="app-content">
         <div class="app-title">
             <div>
-                <h1><i class="fa fa-edit"></i>Add About Us</h1>
+                <h1><i class="fa fa-edit"></i>Add Blog</h1>
             </div>
             <ul class="app-breadcrumb breadcrumb">
                 <li class="breadcrumb-item"><i class="fa fa-home fa-lg"></i></li>
-                <li class="breadcrumb-item">About Us</li>
-                <li class="breadcrumb-item"><a href="#">Add About Us</a></li>
+                <li class="breadcrumb-item">Blog</li>
+                <li class="breadcrumb-item"><a href="#">Add Blog</a></li>
             </ul>
         </div>
 
@@ -23,14 +23,14 @@
         @endif
 
         <div class="">
-            <a class="btn btn-primary" href="{{ url('about-us') }}"><i class="fa fa-edit"></i> Manage About Us</a>
+            <a class="btn btn-primary" href="{{ url('about-us') }}"><i class="fa fa-edit"></i> Manage Blog</a>
         </div>
         <div class="row mt-2">
 
             <div class="clearix"></div>
             <div class="col-md-12">
                 <div class="tile">
-                    <h3 class="tile-title">Add New About Us</h3>
+                    <h3 class="tile-title">Add New Blog</h3>
                     <div class="tile-body">
                         <form method="POST" action=""  enctype="multipart/form-data">
                             @csrf
@@ -45,9 +45,9 @@
                                     @enderror
                                 </div>
                                 {{-- <div class="form-group col-md-6">
-                                    <label class="control-label">Image</label>
-                                    <input name="image" class="form-control @error('image') is-invalid @enderror" type="file">
-                                    @error('image')
+                                    <label class="control-label">YouTube Link</label>
+                                    <input name="link" class="form-control @error('link') is-invalid @enderror" type="text" value="{{ $data->link }}">
+                                    @error('link')
                                     <span class="invalid-feedback" role="alert">
                                             <strong>{{ $message }}</strong>
                                         </span>
@@ -55,20 +55,20 @@
                                 </div> --}}
 
                                 @if ($data->image != null)
-                                    <div class="form-group col-md-6" id="imageField">
-                                        <label class="control-label">Update Image</label>
-                                        <input name="image" class="form-control @error('image') is-invalid @enderror" type="file">
-                                        @error('image')
-                                        <span class="invalid-feedback" role="alert">
-                                                <strong>{{ $message }}</strong>
-                                            </span>
-                                        @enderror
-                                        <div style="padding-top: 5px">
-                                             <img height="50" width="50" src="/images/aboutUs/{{ $data->image }}">
-                                        </div>
+                                <div class="form-group col-md-6" id="imageField">
+                                    <label class="control-label">Update Image</label>
+                                    <input name="image" class="form-control @error('image') is-invalid @enderror" type="file">
+                                    @error('image')
+                                    <span class="invalid-feedback" role="alert">
+                                            <strong>{{ $message }}</strong>
+                                        </span>
+                                    @enderror
+                                    <div style="padding-top: 5px">
+                                         <img height="50" width="50" src="/images/Blog/{{ $data->image }}">
                                     </div>
-                                    
-                                @endif
+                                </div>
+                                
+                            @endif
                             </div>
                             <div class="form-row">
                                 <div class="form-group col-md-12">

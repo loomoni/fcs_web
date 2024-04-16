@@ -3,6 +3,7 @@
 use App\Http\Controllers\Backend\Aboutus\AboutUsController;
 use App\Http\Controllers\Backend\Aboutus\CoresValuesController;
 use App\Http\Controllers\Backend\Blog\BlogController;
+use App\Http\Controllers\Backend\Client\OurClientController;
 use App\Http\Controllers\Backend\Faq\FaqController;
 use App\Http\Controllers\Backend\HomeController;
 use App\Http\Controllers\Backend\Team\TeamController;
@@ -70,6 +71,14 @@ Route::group(['middleware' => 'auth'], function() {
     Route::get('team/edit/{id}', [TeamController::class, 'edit']);
     Route::post('team/edit/{id}', [TeamController::class, 'update']);
     Route::get('team/delete/{id}', [TeamController::class, 'delete']);
+
+    //Our Client route
+    Route::get('our-client', [OurClientController::class, 'index']);
+    Route::get('our-client/create', [OurClientController::class, 'Create']);
+    Route::post('our-client/create', [OurClientController::class, 'Store']);
+    Route::get('our-client/edit/{id}', [OurClientController::class, 'edit']);
+    Route::post('our-client/edit/{id}', [OurClientController::class, 'update']);
+    Route::get('our-client/delete/{id}', [OurClientController::class, 'delete']);
 
 
     

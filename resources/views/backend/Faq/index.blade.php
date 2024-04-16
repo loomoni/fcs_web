@@ -10,16 +10,16 @@
     <main class="app-content">
         <div class="app-title">
             <div>
-                <h1><i class="fa fa-th-list"></i> Manage About Us</h1>
+                <h1><i class="fa fa-th-list"></i> Manage FAQ</h1>
             </div>
             <ul class="app-breadcrumb breadcrumb side">
                 <li class="breadcrumb-item"><i class="fa fa-home fa-lg"></i></li>
-                <li class="breadcrumb-item">About Us</li>
-                <li class="breadcrumb-item active"><a href="#">Manage About Us</a></li>
+                <li class="breadcrumb-item">FAQ</li>
+                <li class="breadcrumb-item active"><a href="#">Manage FAQ</a></li>
             </ul>
         </div>
         <div class="">
-            <a class="btn btn-primary" href="{{ url('about-us/create') }}"><i class="fa fa-plus"> </i> Add New</a>
+            <a class="btn btn-primary" href="{{ url('faq/create') }}"><i class="fa fa-plus"> </i> Add New</a>
         </div>
 
         @if(session()->has('message'))
@@ -56,10 +56,10 @@
                                     <td>{{ $data->title }}</td>
                                     <td>{!! str_limit(html_entity_decode(strip_tags($data->description)), 190, '...') !!}</td>
                                     <td>
-                                        <a class="btn btn-primary btn-sm" href="{{ url('about-us/edit', $data->id) }}"><i class="fa fa-edit" ></i></a>
+                                        <a class="btn btn-primary btn-sm" href="{{ url('faq/edit', $data->id) }}"><i class="fa fa-edit" ></i></a>
                                         <a data-toggle="modal" data-target="#delete{{ $data->id }}" class="btn btn-danger btn-sm text-white"><i class="fa fa-trash"></i></a>
                                     </td> 
-                                    @include('backend/AboutUs/modals/delete')
+                                    @include('backend/Faq/modals/delete')
                                 </tr>
                             @endforeach
                             </tbody>

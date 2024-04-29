@@ -9,21 +9,24 @@
 
 
                 <div class="owl-carousel owl-theme row">
-                    <div class="w-100 item">
-                        <div class="card bg-white" style="min-height: 40vh;">
-                            <div class="w-100 d-flex justify-content-center mt-4">
-                                <img src="{{ url('frontend/assets/img/home/matching_fund.jpg') }}" class="card-img-top" alt="...">
-                            </div>
+                    @foreach ($currentNews as $data)
+                        <div class="w-100 item">
+                            <div class="card bg-white" style="min-height: 40vh;">
+                                <div class="w-100 d-flex justify-content-center mt-4">
+                                    <img src="/images/Blog/{{ $data->image }}" class="card-img-top" alt="...">
+                                </div>
 
-                            <div class="card-body mb-4" >
-                                <h5 class="card-title">Participatory Grant Making: A New daw...</h5>
-                                <p class="card-text">Residents of Wilunze Village in Chamwino District, Dodoma Region, have expressed gratitude for the implementation...</p>
-                                <a class="read-more-dinim float-right" data-mdb-ripple-color="dark">
-                                    MORE
-                                </a>
+                                <div class="card-body mb-4" >
+                                    <h5 class="card-title">{{ $data->title }}</h5>
+                                    <p class="card-text">Residents of Wilunze Village in Chamwino District, Dodoma Region, have expressed gratitude for the implementation...</p>
+                                    <a class="read-more-dinim float-right" data-mdb-ripple-color="dark">
+                                        MORE
+                                    </a>
+                                </div>
                             </div>
                         </div>
-                    </div>
+                    @endforeach
+                   
                     <div class="w-100 item">
                         <div class="card bg-white" style="min-height: 40vh;">
                             <div class="w-100 d-flex justify-content-center mt-4">

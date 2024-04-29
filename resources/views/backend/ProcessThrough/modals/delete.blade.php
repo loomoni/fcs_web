@@ -5,7 +5,7 @@
                 <h4 class="modal-title">Delete Content</h4>
                 <button type="button" class="close" data-dismiss="modal"><span aria-hidden="true">&times;</span><span class="sr-only">Close</span></button>
             </div>
-            <form role="form" action="{{ url('about-us/delete', $data->id) }}" method="GET">
+            <form role="form" action="{{ url('process/delete', $data->id) }}" method="GET">
                 @csrf
                 <div class="modal-body">
                     <div class="ibox w-100">

@@ -9,49 +9,64 @@
                 </div>
 
                 <div class="owl-carousel owl-theme row">
-                    <div class="w-100 item">
-                        <div class="card bg-white">
-                            <div class="w-100 d-flex flex-column align-items-center justify-content-center mt-4">
-                                <div class="hexagon-part">
-                                    <div class='hexagon-shape'>
-                                        <img src="{{ url('frontend/images/fcs/ELEMENTS/REGENERATIVE.png') }}" class="pent-img">
+                   
+
+                    <?php $count = 0; ?>
+                        @foreach($processThrough as $data)
+                            <?php $count++; ?>
+
+                            @if ($count % 2 == 0)
+                                <div class="w-100 item">
+                                    <div class="card bg-white">
+                                        <div class="w-100 d-flex flex-column align-items-center justify-content-center mt-4">
+                                            <div class="hexagon-part">
+                                                <div class='hexagon-shape'>
+                                                    <img src="/images/ProcessThrough/{{ $data->image }}" class="pent-img">
+                                                </div>
+                                            </div>
+                                            <div class="line-after">
+                                            </div>
+                                            <div class="circle d-flex align-items-center justify-content-center">
+                                                <span>{{ $count }}</span>
+                                            </div>
+                                        </div>
+
+                                        <div class="card-body text-center mb-4">
+                                            <h5 class="card-title">{{ $data->title }}</h5>
+                                            <p class="card-text">{{ $data->description }}</p>
+                                        </div>
                                     </div>
                                 </div>
-                                <div class="line-after">
-                                </div>
-                                <div class="circle d-flex align-items-center justify-content-center">
-                                    <span>1</span>
-                                </div>
-                            </div>
+                            @else
+                                <div class="w-100 item">
+                                    <div class="card bg-white">
+                                        <div class="w-100 d-flex flex-column align-items-center justify-content-center mt-4">
+                                            <div class="hexagon-part">
+                                                <div class='hexagon-shape-2'>
+                                                    <img src="/images/ProcessThrough/{{ $data->image }}" class="pent-img-4">
+                                                </div>
+                                            </div>
+                                            <div class="line-after-2">
+                                            </div>
+                                            <div class="circle-2 d-flex align-items-center justify-content-center">
+                                                <span>{{ $count }}</span>
+                                            </div>
+                                        </div>
 
-                            <div class="card-body text-center mb-4">
-                                <h5 class="card-title">Targeting promotion</h5>
-                                <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="w-100 item">
-                        <div class="card bg-white">
-                            <div class="w-100 d-flex flex-column align-items-center justify-content-center mt-4">
-                                <div class="hexagon-part">
-                                    <div class='hexagon-shape-2'>
-                                        <img src="{{ url('frontend/images/fcs/ELEMENTS/3031185-200.png') }}" class="pent-img-4">
+                                        <div class="card-body text-center mb-4">
+                                            <h5 class="card-title">{{ $data->title }}</h5>
+                                            <p class="card-text">{{ $data->description }}</p>
+                                        </div>
                                     </div>
                                 </div>
-                                <div class="line-after-2">
-                                </div>
-                                <div class="circle-2 d-flex align-items-center justify-content-center">
-                                    <span>2</span>
-                                </div>
-                            </div>
+                            @endif
 
-                            <div class="card-body text-center mb-4">
-                                <h5 class="card-title">Targeting promotion</h5>
-                                <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="w-100 item">
+                        @endforeach
+
+
+
+
+                    {{-- <div class="w-100 item">
                         <div class="card bg-white">
                             <div class="w-100 d-flex flex-column align-items-center justify-content-center mt-4">
                                 <div class="hexagon-part">
@@ -92,7 +107,7 @@
                                 <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
                             </div>
                         </div>
-                    </div>
+                    </div> --}}
                 </div>
             </div>
         </div>

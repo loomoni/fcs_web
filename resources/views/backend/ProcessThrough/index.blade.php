@@ -49,7 +49,7 @@
                             </tr>
                             </thead>
                             <tbody>
-                                <?php $count=0 ?>
+                            <?php $count=0 ?>
                             @foreach( $data as $data)
                              <?php $count++ ?>
                                 <tr>
@@ -58,10 +58,10 @@
                                     <td>{{ $data->type }}</td>
                                     <td>{!! str_limit(html_entity_decode(strip_tags($data->description)), 190, '...') !!}</td>
                                     <td>
-                                        <a class="btn btn-primary btn-sm" href="{{ url('about-us/edit', $data->id) }}"><i class="fa fa-edit" ></i></a>
+                                        <a class="btn btn-primary btn-sm" href="{{ url('process/edit', $data->id) }}"><i class="fa fa-edit" ></i></a>
                                         <a data-toggle="modal" data-target="#delete{{ $data->id }}" class="btn btn-danger btn-sm text-white"><i class="fa fa-trash"></i></a>
                                     </td> 
-                                    @include('backend/AboutUs/modals/delete')
+                                    @include('backend/ProcessThrough/modals/delete')
                                 </tr>
                             @endforeach
                             </tbody>

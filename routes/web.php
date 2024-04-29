@@ -8,8 +8,10 @@ use App\Http\Controllers\Backend\Contact\ContactsInformationController;
 use App\Http\Controllers\Backend\Faq\FaqController;
 use App\Http\Controllers\Backend\Grants\GrantsController;
 use App\Http\Controllers\Backend\HomeController;
+use App\Http\Controllers\Backend\Process\ProcessThrougController;
 use App\Http\Controllers\Backend\Team\TeamController;
 use App\Http\Controllers\Frontend\Auth\AuthController;
+use App\Http\Controllers\Frontend\FrontendController;
 use Illuminate\Support\Facades\Route;
 
 /*
@@ -23,19 +25,29 @@ use Illuminate\Support\Facades\Route;
 |
 */
 
-Route::get('/', function () {
-    return view('welcome');
-});
+// Route::get('/', function () {
+//     return view('frontend.components.Home.main');
+
+// });
 
 Route::get('login', [AuthController::class, 'login'])->name('login');
 Route::post('login', [AuthController::class, 'AuthLogin']);
 
+Route::get('/', [FrontendController::class, 'index']);
+Route::get('about-us', [FrontendController::class, 'AboutUs']);
+Route::get('our-governance', [FrontendController::class, 'OurGovernance']);
+Route::get('our-approach', [FrontendController::class, 'Approach']);
+Route::get('get-involved', [FrontendController::class, 'GetInvolved']);
+Route::get('media', [FrontendController::class, 'Media']);
+
+
+
 Route::group(['middleware' => 'auth'], function() {
 
-    Route::get('/dashboard', [HomeController::class, 'index']);
+    Route::get('/dashboard', [HomeController::class, 'Dashboard']);
 
     //About us route
-    Route::get('about-us', [AboutUsController::class, 'index']);
+    Route::get('aboutus', [AboutUsController::class, 'index']);
     Route::get('about-us/create', [AboutUsController::class, 'Create']);
     Route::post('about-us/create', [AboutUsController::class, 'Store']);
     Route::get('about-us/edit/{id}', [AboutUsController::class, 'edit']);
@@ -65,6 +77,14 @@ Route::group(['middleware' => 'auth'], function() {
     Route::get('values/edit/{id}', [CoresValuesController::class, 'edit']);
     Route::post('values/edit/{id}', [CoresValuesController::class, 'update']);
     Route::get('values/delete/{id}', [CoresValuesController::class, 'delete']);
+
+    //Process route
+    Route::get('process', [ProcessThrougController::class, 'index']);
+    Route::get('process/create', [ProcessThrougController::class, 'Create']);
+    Route::post('process/create', [ProcessThrougController::class, 'Store']);
+    Route::get('process/edit/{id}', [ProcessThrougController::class, 'edit']);
+    Route::post('process/edit/{id}', [ProcessThrougController::class, 'update']);
+    Route::get('process/delete/{id}', [ProcessThrougController::class, 'delete']);
 
     //Team route
     Route::get('team', [TeamController::class, 'index']);

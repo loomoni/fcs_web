@@ -22,7 +22,7 @@
         <li class="treeview "><a class="app-menu__item {{ request()->is('about-us*') ? 'active' : ''}}" href="#" data-toggle="treeview"><i class="app-menu__icon fa fa-sitemap"></i><span class="app-menu__label">About Us</span><i class="treeview-indicator fa fa-angle-right"></i></a>
             <ul class="treeview-menu">
                 <li><a class="treeview-item " href="{{ url('about-us/create') }}"><i class="icon fa fa-plus"></i>Create</a></li>
-                <li><a class="treeview-item" href="{{ url('about-us') }}"><i class="icon fa fa-edit"></i>Manage</a></li>
+                <li><a class="treeview-item" href="{{ url('aboutus') }}"><i class="icon fa fa-edit"></i>Manage</a></li>
             </ul>
         </li>
 
@@ -30,6 +30,13 @@
             <ul class="treeview-menu">
                 <li><a class="treeview-item" href="{{url('values/create')}}"><i class="icon fa fa-plus"></i> Add Values</a></li>
                 <li><a class="treeview-item" href="{{url('values')}}"><i class="icon fa fa-edit"></i> Manage Values</a></li>
+            </ul>
+        </li>
+
+        <li class="treeview"><a class="app-menu__item {{ request()->is('process*') ? 'active' : ''}}" href="#" data-toggle="treeview"><i class="app-menu__icon fa fa-low-vision"></i><span class="app-menu__label">Our Process</span><i class="treeview-indicator fa fa-angle-right"></i></a>
+            <ul class="treeview-menu">
+                <li><a class="treeview-item" href="{{url('process/create')}}"><i class="icon fa fa-plus"></i> Add Values</a></li>
+                <li><a class="treeview-item" href="{{url('process')}}"><i class="icon fa fa-edit"></i> Manage Values</a></li>
             </ul>
         </li>
 

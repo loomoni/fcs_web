@@ -10,16 +10,16 @@
     <main class="app-content">
         <div class="app-title">
             <div>
-                <h1><i class="fa fa-th-list"></i> Manage About Us</h1>
+                <h1><i class="fa fa-th-list"></i> Manage Process</h1>
             </div>
             <ul class="app-breadcrumb breadcrumb side">
                 <li class="breadcrumb-item"><i class="fa fa-home fa-lg"></i></li>
-                <li class="breadcrumb-item">About Us</li>
-                <li class="breadcrumb-item active"><a href="#">Manage About Us</a></li>
+                <li class="breadcrumb-item">Process</li>
+                <li class="breadcrumb-item active"><a href="#">Manage Process</a></li>
             </ul>
         </div>
         <div class="">
-            <a class="btn btn-primary" href="{{ url('about-us/create') }}"><i class="fa fa-plus"> </i> Add New</a>
+            <a class="btn btn-primary" href="{{ url('process/create') }}"><i class="fa fa-plus"> </i> Add New</a>
         </div>
 
         @if(session()->has('message'))

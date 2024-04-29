@@ -1,18 +1,18 @@
 @extends('layouts.master')
 
-@section('title', 'About Us | ')
+@section('title', 'Process | ')
 @section('content')
     @include('partials.header')
     @include('partials.sidebar')
     <main class="app-content">
         <div class="app-title">
             <div>
-                <h1><i class="fa fa-edit"></i>About Us</h1>
+                <h1><i class="fa fa-edit"></i>Process</h1>
             </div>
             <ul class="app-breadcrumb breadcrumb">
                 <li class="breadcrumb-item"><i class="fa fa-home fa-lg"></i></li>
-                <li class="breadcrumb-item">About Us</li>
-                <li class="breadcrumb-item"><a href="#">Add About Us</a></li>
+                <li class="breadcrumb-item">Process</li>
+                <li class="breadcrumb-item"><a href="#">Add Process</a></li>
             </ul>
         </div>
 
@@ -30,7 +30,7 @@
             <div class="clearix"></div>
             <div class="col-md-12">
                 <div class="tile">
-                    <h3 class="tile-title">New About Us</h3>
+                    <h3 class="tile-title">New Process</h3>
                     <div class="tile-body">
                         <form method="POST" action=""  enctype="multipart/form-data">
                             @csrf
@@ -44,37 +44,27 @@
                                         </span>
                                     @enderror
                                 </div>
+
                                 <div class="form-group col-md-6">
-                                    <label class="control-label">Type</label>
-                                    <select name="type" class="form-control" required="">
-                                        <option>---Select Type---</option>
-                                        <option value="About FCS">About FCS</option>
-                                        <option value="Work Location">Work Location</option>
-                                        {{-- <option value="CLARITY">CLARITY</option> --}}
-                                    </select>
-                                </div>
-                                
-                            </div>
-                            <div class="form-row">
-                                <div class="form-group col-md-12">
                                     <label class="control-label">Image</label>
-                                    <input name="image" class="form-control @error('link') is-invalid @enderror" type="file" placeholder="Image">
+                                    <input style="height: 38px" name="image" class="form-control @error('link') is-invalid @enderror" type="file" placeholder="Image">
                                     @error('link')
                                     <span class="invalid-feedback" role="alert">
                                             <strong>{{ $message }}</strong>
                                         </span>
                                     @enderror
                                 </div>
+                                
                             </div>
+                            
                             <div class="form-row">
                                 <div class="form-group col-md-12">
                                     <label class="control-label">Description</label>
-                                    {{-- <input name="description" class="form-control @error('description') is-invalid @enderror" type="text"> --}}
-                                    <textarea type="text" name="description" class="summernotecontents"></textarea>
+                                    <textarea name="description" class="form-control  @error('description') is-invalid @enderror" placeholder="Enter Value Description"></textarea>
                                     @error('description')
                                     <span class="invalid-feedback" role="alert">
                                             <strong>{{ $message }}</strong>
-                                        </span>
+                                    </span>
                                     @enderror
                                 </div>
                             </div>

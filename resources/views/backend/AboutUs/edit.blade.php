@@ -44,31 +44,37 @@
                                         </span>
                                     @enderror
                                 </div>
-                                {{-- <div class="form-group col-md-6">
-                                    <label class="control-label">Image</label>
+                                <div class="form-group col-md-6">
+                                    <label class="control-label">Type</label>
+                                    <select name="type" class="form-control" required="">
+                                        <option>---Select Type---</option>
+                                        <option value="About FCS">About FCS</option>
+                                        <option value="Work Location">Work Location</option>
+                                        {{-- <option value="CLARITY">CLARITY</option> --}}
+                                    </select>
+                                </div>
+                               
+
+                               
+                            </div>
+                            <div class="form-row">
+
+                                @if ($data->image != null)
+                                <div class="form-group col-md-12" id="imageField">
+                                    <label class="control-label">Update Image</label>
                                     <input name="image" class="form-control @error('image') is-invalid @enderror" type="file">
                                     @error('image')
                                     <span class="invalid-feedback" role="alert">
                                             <strong>{{ $message }}</strong>
                                         </span>
                                     @enderror
-                                </div> --}}
-
-                                @if ($data->image != null)
-                                    <div class="form-group col-md-6" id="imageField">
-                                        <label class="control-label">Update Image</label>
-                                        <input name="image" class="form-control @error('image') is-invalid @enderror" type="file">
-                                        @error('image')
-                                        <span class="invalid-feedback" role="alert">
-                                                <strong>{{ $message }}</strong>
-                                            </span>
-                                        @enderror
-                                        <div style="padding-top: 5px">
-                                             <img height="50" width="50" src="/images/aboutUs/{{ $data->image }}">
-                                        </div>
+                                    <div style="padding-top: 5px">
+                                         <img height="50" width="50" src="/images/aboutUs/{{ $data->image }}">
                                     </div>
-                                    
-                                @endif
+                                </div>
+                                
+                            @endif
+
                             </div>
                             <div class="form-row">
                                 <div class="form-group col-md-12">

@@ -3,12 +3,15 @@
 namespace App\Http\Controllers\Backend;
 
 use App\Http\Controllers\Controller;
-use Illuminate\Http\Request;
+use App\Models\AboutUs;
+
 
 class HomeController extends Controller
 {
-    public function index()
+    public function Dashboard()
     {
-        return view('home');
+        $Aboutus = AboutUs::all()->first();
+        return view('home', compact('Aboutus'));
     }
+  
 }

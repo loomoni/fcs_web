@@ -23,7 +23,7 @@
         @endif
 
         <div class="">
-            <a class="btn btn-primary" href="{{ url('about-us') }}"><i class="fa fa-edit"></i> Manage</a>
+            <a class="btn btn-primary" href="{{ url('process') }}"><i class="fa fa-edit"></i> Manage</a>
         </div>
         <div class="row mt-2">
 

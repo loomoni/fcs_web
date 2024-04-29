@@ -34,7 +34,7 @@ class ProcessThrougController extends Controller
         }
 
         $data->save();
-        return redirect('ProcessThrough')->with('message', 'About us added successfully');
+        return redirect('process')->with('message', 'Process Through added successfully');
     }
 
     public function edit($id)
@@ -50,7 +50,7 @@ class ProcessThrougController extends Controller
         $data = ProcessThrough::find($id);
 
         if (!$data) {
-            return redirect('ProcessThrough')->with('error', 'Service not found');
+            return redirect('process')->with('error', 'Service not found');
         }
 
         // Handle image update
@@ -80,10 +80,10 @@ class ProcessThrougController extends Controller
         try {
             // Save the updated data
             $data->save();
-            return redirect('ProcessThrough')->with('message', 'About us updated successfully');
+            return redirect('process')->with('message', 'The process through updated successfully');
         } catch (\Exception $e) {
             // Log the error or handle it as needed
-            return redirect('ProcessThrough')->with('error', 'Error occurred while updating data');
+            return redirect('process')->with('error', 'Error occurred while updating data');
         }
         
    }
@@ -93,7 +93,7 @@ class ProcessThrougController extends Controller
        $data = ProcessThrough::find($id);
 
        if (!$data) {
-           return redirect('ProcessThrough')->with('error', 'Data not found');
+           return redirect('process')->with('error', 'Data not found');
        }
 
        // Retrieve the image path
@@ -108,10 +108,10 @@ class ProcessThrougController extends Controller
                unlink($imagePath);
            }
 
-           return redirect('ProcessThrough')->with('message', 'About us deleted successfully');
+           return redirect('process')->with('message', 'Process Through deleted successfully');
        } catch (\Exception $e) {
            // image the error or handle it as needed
-           return redirect('ProcessThrough')->with('error', 'Error occured deleting About us');
+           return redirect('process')->with('error', 'Error occured deleting Process Through');
        }
    }
 }

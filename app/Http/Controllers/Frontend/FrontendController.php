@@ -5,6 +5,7 @@ namespace App\Http\Controllers\Frontend;
 use App\Http\Controllers\Controller;
 use App\Models\AboutUs;
 use App\Models\CoreValue;
+use App\Models\ProcessThrough;
 use Illuminate\Http\Request;
 
 class FrontendController extends Controller
@@ -15,7 +16,8 @@ class FrontendController extends Controller
         $WorkLocation = AboutUs::where('type', 'Work Location')->first();
         $Mission = CoreValue::where('type', 'MISSION')->first();
         $Vission = CoreValue::where('type', 'VISION')->first();
-        return view('frontend.components.Home.base', compact('Aboutus', 'Mission', 'Vission', 'WorkLocation'));
+        $processThrough = ProcessThrough::all();
+        return view('frontend.components.Home.base', compact('Aboutus', 'Mission', 'Vission', 'WorkLocation', 'processThrough'));
     }
 
     public function AboutUs()

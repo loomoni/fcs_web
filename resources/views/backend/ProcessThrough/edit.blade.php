@@ -23,7 +23,7 @@
         @endif
 
         <div class="">
-            <a class="btn btn-primary" href="{{ url('about-us') }}"><i class="fa fa-edit"></i> Manage Process</a>
+            <a class="btn btn-primary" href="{{ url('process') }}"><i class="fa fa-edit"></i> Manage Process</a>
         </div>
         <div class="row mt-2">
 
@@ -44,47 +44,35 @@
                                         </span>
                                     @enderror
                                 </div>
+
                                 <div class="form-group col-md-6">
-                                    <label class="control-label">Type</label>
-                                    <select name="type" class="form-control" required="">
-                                        <option>---Select Type---</option>
-                                        <option value="About FCS">About FCS</option>
-                                        <option value="Work Location">Work Location</option>
-                                        {{-- <option value="CLARITY">CLARITY</option> --}}
-                                    </select>
-                                </div>
-                               
-
-                               
-                            </div>
-                            <div class="form-row">
-
-                                @if ($data->image != null)
-                                <div class="form-group col-md-12" id="imageField">
-                                    <label class="control-label">Update Image</label>
-                                    <input name="image" class="form-control @error('image') is-invalid @enderror" type="file">
-                                    @error('image')
-                                    <span class="invalid-feedback" role="alert">
-                                            <strong>{{ $message }}</strong>
-                                        </span>
-                                    @enderror
-                                    <div style="padding-top: 5px">
-                                         <img height="50" width="50" src="/images/aboutUs/{{ $data->image }}">
+                                    @if ($data->image != null)
+                                    <div class="form-group col-md-6" id="imageField">
+                                        <label class="control-label">Update Image</label>
+                                        <input name="image" class="form-control @error('image') is-invalid @enderror" type="file">
+                                        @error('image')
+                                        <span class="invalid-feedback" role="alert">
+                                                <strong>{{ $message }}</strong>
+                                            </span>
+                                        @enderror
+                                        <div style="padding-top: 5px">
+                                             <img height="50" width="50" src="/images/ProcessThrough/{{ $data->image }}">
+                                        </div>
                                     </div>
+                                    
+                                @endif
                                 </div>
                                 
-                            @endif
-
                             </div>
+                            
                             <div class="form-row">
                                 <div class="form-group col-md-12">
                                     <label class="control-label">Description</label>
-                                    {{-- <input name="description" class="form-control @error('description') is-invalid @enderror" type="text"> --}}
-                                    <textarea type="text" name="description" class="summernotecontents">{{ $data->description }}</textarea>
+                                    <textarea name="description" class="form-control  @error('description') is-invalid @enderror">{{ $data->description }}</textarea>
                                     @error('description')
                                     <span class="invalid-feedback" role="alert">
                                             <strong>{{ $message }}</strong>
-                                        </span>
+                                    </span>
                                     @enderror
                                 </div>
                             </div>

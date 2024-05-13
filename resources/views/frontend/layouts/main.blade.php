@@ -18,6 +18,7 @@
 
   <!-- Vendor CSS Files -->
  @include('frontend.layouts.components.css')
+
  
 </head>
 
@@ -71,7 +72,7 @@
           <div class="col-md-6 d-flex flex-row top-header">
               <ul>
                   <li class="right text-nowrap fw-bold text-dinim"> 
-                      <button type="button" class="btn  bg-white text-dinim fw-bold" data-bs-toggle="modal" data-bs-target="#facilitateModal">
+                      <button id="facilitateButton" type="button" class="btn  bg-white text-dinim fw-bold" data-bs-toggle="modal" data-bs-target="#facilitateModal">
                           Facilitate
                       </button>
                       <div class="modal fade" id="facilitateModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
@@ -94,7 +95,7 @@
                       </div>
                   </li>
                   <li class="middle text-nowrap fw-bold text-dinim">
-                      <button type="button" class="btn  bg-white text-dinim fw-bold" data-bs-toggle="modal" data-bs-target="#CapacitateModal">
+                      <button id="capacitateButton" type="button" class="btn  bg-white text-dinim fw-bold" data-bs-toggle="modal" data-bs-target="#CapacitateModal">
                           Capacitate
                       </button>
                       <div class="modal fade" id="CapacitateModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
@@ -116,7 +117,7 @@
                       </div>
                   </li>
                   <li class="buttom text-nowrap fw-bold text-dinim">
-                      <button type="button" class="btn  bg-white text-dinim fw-bold" data-bs-toggle="modal" data-bs-target="#AccelerateModal">
+                      <button id="accelerateButton" type="button" class="btn  bg-white text-dinim fw-bold" data-bs-toggle="modal" data-bs-target="#AccelerateModal">
                           Accelerate
                       </button>
                       <div class="modal fade" id="AccelerateModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
@@ -153,26 +154,47 @@
 
   {{-- @include('frontend.components.Home.sliders') --}}
 
-  <div class="menu-toogle p-absolute">
-    <div class="menu-toggle-icon">
-        <!-- <svg xmlns="http://www.w3.org/2000/svg" width="32" height="32" fill="currentColor" class="bi bi-list" viewBox="0 0 16 16">
-            <path fill-rule="evenodd" d="M3 2.5a.5.5 0 0 1 .5-.5h11a.5.5 0 0 1 0 1h-11a.5.5 0 0 1-.5-.5zM3.5 6a.5.5 0 0 0-.5.5v11a.5.5 0 0 0 1 0v-11a.5.5 0 0 0-.5-.5zm5 0a.5.5 0 0 0-.5.5v11a.5.5 0 0 0 1 0v-11a.5.5 0 0 0-.5-.5zm5 0a.5.5 0 0 0-.5.5v11a.5.5 0 0 0 1 0v-11a.5.5 0 0 0-.5-.5z"/>
-        </svg> -->
-        <span style="font-size:30px;cursor:pointer" id="menu-icon" onclick="openNav()">&#9776; Menu</span>
+    {{-- <div class="menu-toogle p-absolute">
+        <div class="menu-toggle-icon" id="menuToggleIcon">
+            <!-- <svg xmlns="http://www.w3.org/2000/svg" width="32" height="32" fill="currentColor" class="bi bi-list" viewBox="0 0 16 16">
+                <path fill-rule="evenodd" d="M3 2.5a.5.5 0 0 1 .5-.5h11a.5.5 0 0 1 0 1h-11a.5.5 0 0 1-.5-.5zM3.5 6a.5.5 0 0 0-.5.5v11a.5.5 0 0 0 1 0v-11a.5.5 0 0 0-.5-.5zm5 0a.5.5 0 0 0-.5.5v11a.5.5 0 0 0 1 0v-11a.5.5 0 0 0-.5-.5zm5 0a.5.5 0 0 0-.5.5v11a.5.5 0 0 0 1 0v-11a.5.5 0 0 0-.5-.5z"/>
+            </svg> -->
+            <span style="font-size:30px;cursor:pointer" id="menu-icon" onclick="openNav()">&#9776; Menu</span>
+            
+        </div>
         
+        <div id="mySidenav" class="sidenav mx-2">
+            <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+            <a href="{{ url('/') }}" class="text-dinim">Home</a>
+            <a href="{{ url('about-us') }}" class="text-dinim">About Us</a>
+            {{-- <a href="{{ url('our-governance') }}" class="text-dinim">Our governance</a> --}}
+            {{-- <a href="{{ url('our-approach') }}" class="text-dinim">Our approach</a>
+            <a href="https://csoweek.or.tz/" class="text-dinim">CSO Week 2024</a>
+            <a href="{{ url('get-involved') }}" class="text-dinim">Get involved</a>
+            <a href="{{ url('media') }}" class="text-dinim">Media</a> --}}
+        {{-- </div>
+    </div> --}} --}}
+
+
+    <div class="menu-toggle p-absolute">
+        <div class="menu-toggle-icon" id="menuToggleIcon">
+            <!-- Your icon or text here -->
+            <span style="font-size:30px;cursor:pointer" id="menu-icon" onclick="openNav()">&#9776; Menu</span>
+        </div>
+        
+        <div id="mySidenav" class="sidenav mx-2">
+            <!-- Your menu content here -->
+            <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+            <a href="{{ url('/') }}" class="text-dinim">Home</a>
+            <a href="{{ url('about-us') }}" class="text-dinim">About Us</a>
+            {{-- <a href="{{ url('our-governance') }}" class="text-dinim">Our governance</a> --}}
+            <a href="{{ url('our-approach') }}" class="text-dinim">Our approach</a>
+            <a href="https://csoweek.or.tz/" class="text-dinim">CSO Week 2024</a>
+            <a href="{{ url('get-involved') }}" class="text-dinim">Get involved</a>
+            <a href="{{ url('media') }}" class="text-dinim">Media</a>
+        </div>
     </div>
     
-    <div id="mySidenav" class="sidenav mx-2">
-        <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
-        <a href="{{ url('/') }}" class="text-dinim">Home</a>
-        <a href="{{ url('about-us') }}" class="text-dinim">About Us</a>
-        {{-- <a href="{{ url('our-governance') }}" class="text-dinim">Our governance</a> --}}
-        <a href="{{ url('our-approach') }}" class="text-dinim">Our approach</a>
-        <a href="https://csoweek.or.tz/" class="text-dinim">CSO Week 2024</a>
-        <a href="{{ url('get-involved') }}" class="text-dinim">Get involved</a>
-        <a href="{{ url('media') }}" class="text-dinim">Media</a>
-    </div>
-</div>
 
 
 
@@ -195,6 +217,8 @@
   <a href="#" class="back-to-top d-flex align-items-center justify-content-center"><i class="bi bi-arrow-up-short"></i></a>
 
  @include('frontend.layouts.components.script')
+
+
 
 </body>
 

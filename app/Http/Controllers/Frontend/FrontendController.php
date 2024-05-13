@@ -6,6 +6,7 @@ use App\Http\Controllers\Controller;
 use App\Models\AboutUs;
 use App\Models\Blog;
 use App\Models\CoreValue;
+use App\Models\OurClient;
 use App\Models\ProcessThrough;
 use Illuminate\Http\Request;
 
@@ -19,7 +20,8 @@ class FrontendController extends Controller
         $Vission = CoreValue::where('type', 'VISION')->first();
         $processThrough = ProcessThrough::all();
         $currentNews = Blog::all();
-        return view('frontend.components.Home.base', compact('Aboutus', 'Mission', 'Vission', 'WorkLocation', 'processThrough', 'currentNews'));
+        $client = OurClient::all();
+        return view('frontend.components.Home.base', compact('Aboutus', 'Mission', 'Vission', 'WorkLocation', 'processThrough', 'currentNews', 'client'));
     }
 
     public function AboutUs()

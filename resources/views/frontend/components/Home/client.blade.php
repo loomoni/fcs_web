@@ -22,17 +22,23 @@
                         
                         <div class="col-lg-6 pt-4 d-flex align-items-center pt-lg-0" data-aos="fade-left">
                             <div class="row no-gutters clidents-wrap clearfisx" data-aos="fade-up">
-                                <div class="col-lg-6 col-md-6 col-6">
-                                  <div class="gclient-logo">
-                                    <img src="{{ ('frontend/images/partner2-removebg-preview.png') }}" class="simg-fluid" alt="">
-                                  </div>
-                                </div>
+                                @if ($client != null)
+                                    @foreach ($client as $data)
+                                        <div class="col-lg-6 col-md-6 col-6">
+                                            <div class="sclient-logo">
+                                            <img src="/images/logo/{{ $data->logo }}" class="simg-fluid" alt="">
+                                            </div>
+                                        </div>
+                                    @endforeach
+                                @endif
+                              
                       
-                                <div class="col-lg-6 col-md-6 col-6">
+                                {{-- <div class="col-lg-6 col-md-6 col-6">
                                   <div class="sclient-logo">
-                                    <img src="{{ ('frontend/images/partner3-removebg-preview.png') }}" class="ismg-fluid" alt="">
+                                    <img src="{{ ('frontend/images/partner1.png') }}" class="ismg-fluid" alt="">
                                   </div>
-                                </div>
+                                </div> --}}
+                           
                               </div>
                         </div>
                     </div>

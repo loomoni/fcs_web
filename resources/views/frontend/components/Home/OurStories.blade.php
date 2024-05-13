@@ -27,7 +27,7 @@
                                     
                                         Established over 2 decades ago, FCS is the largest local
                                         grant maker with extensive 
-                                        class="independent-title">
+                            
                                         Established over 2 decades ago, FCS is the largest local
                                         grant maker with extensive 
                                     </p>

@@ -124,5 +124,65 @@
 
       
 	</script>
+ <script>
+    document.addEventListener("DOMContentLoaded", function () {
+      var facilitateButton = document.getElementById("facilitateButton");
+      var facilitateModal = new bootstrap.Modal(document.getElementById("facilitateModal"));
+
+      facilitateButton.addEventListener("mouseenter", function () {
+          facilitateModal.show();
+      });
+
+      facilitateModal._element.addEventListener("mouseleave", function () {
+          facilitateModal.hide();
+      });
+    });
+
+    document.addEventListener("DOMContentLoaded", function () {
+      var capacitateButton = document.getElementById("capacitateButton");
+      var CapacitateModal = new bootstrap.Modal(document.getElementById("CapacitateModal"));
+
+      capacitateButton.addEventListener("mouseenter", function () {
+        CapacitateModal.show();
+      });
+
+      CapacitateModal._element.addEventListener("mouseleave", function () {
+        CapacitateModal.hide();
+      });
+    });
+
+    document.addEventListener("DOMContentLoaded", function () {
+      var accelerateButton = document.getElementById("accelerateButton");
+      var AccelerateModal = new bootstrap.Modal(document.getElementById("AccelerateModal"));
+
+      accelerateButton.addEventListener("mouseenter", function () {
+        AccelerateModal.show();
+      });
+
+      AccelerateModal._element.addEventListener("mouseleave", function () {
+        AccelerateModal.hide();
+      });
+    });
+
+    // Get references to the elements
+    var menuToggleIcon = document.getElementById("menuToggleIcon");
+    var mySidenav = document.getElementById("mySidenav");
+
+    // Function to show the menu
+    function showMenu() {
+        mySidenav.style.display = "block";
+    }
+
+    // Function to hide the menu
+    function hideMenu() {
+        mySidenav.style.display = "none";
+    }
+
+    // Attach event listeners for mouseenter and mouseleave events
+    menuToggleIcon.addEventListener("mouseenter", showMenu);
+    mySidenav.addEventListener("mouseleave", hideMenu);
+    
+</script>
+
 
   <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyAChJNvE8x9PwAl3-TozmGp1mDCy9anvjI&callback=myMap"></script>

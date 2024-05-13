@@ -45,12 +45,12 @@
       <section class="bg-light-gray">
         <div class="container">
             <div class="foundation-news-content">
-                <div class="foundation-news-title text-center mb-3">
+                <div class="foundation-news-title text-center mb-3" data-aos="fade-up-left">
                     <h2><strong>News</strong></h2>
                 </div>
 
                 <div class="row">
-                    <div class="col-md-3 item">
+                    <div class="col-md-3 item" data-aos="fade-up">
                         <div class="card bg-transparent">
                             <div class="w-100 d-flex justify-content-center mt-4">
                                 <img src="{{ url('frontend/assets/img/home/matching_fund.jpg') }}" class="card-img-top" alt="...">
@@ -65,7 +65,7 @@
                             </div>
                         </div>
                     </div>
-                    <div class="col-md-3 item">
+                    <div class="col-md-3 item" data-aos="fade-down">
                         <div class="card bg-transparent">
                             <div class="w-100 d-flex justify-content-center mt-4">
                                 <img src="{{ url('frontend/assets/img/home/uraia_project-1.jpg') }}" class="card-img-top" alt="...">
@@ -80,7 +80,7 @@
                             </div>
                         </div>
                     </div>
-                    <div class="col-md-3 item">
+                    <div class="col-md-3 item" data-aos="fade-right">
                         <div class="card bg-transparent">
                             <div class="w-100 d-flex justify-content-center mt-4">
                                 <img src="{{ url('frontend/assets/img/home/G57A6554.jpg') }}" class="card-img-top" alt="...">
@@ -95,7 +95,7 @@
                             </div>
                         </div>
                     </div>
-                    <div class="col-md-3 item">
+                    <div class="col-md-3 item" data-aos="fade-left">
                         <div class="card bg-transparent">
                             <div class="w-100 d-flex justify-content-center mt-4">
                                 <img src="{{ url('frontend/assets/img/home/Aid-Localization.jpg') }}" class="card-img-top w-100" alt="...">
@@ -119,13 +119,13 @@
        <!-- ======= Podcast ======= -->
        <section id="podcast" class="podcast bg-white">
         <div class="container">
-            <div class="postcast-content-1">
-                <div class="section-title text-center mb-4">
+            <div class="postcast-content-1" data-aos="fade-up-left">
+                <div class="section-title text-center mb-4" data-aos="fade-down-right">
                     <h2>Podcast</h2>
                 </div>
 
                 <div class="row">
-                    <div class="col-md-6 item">
+                    <div class="col-md-6 item" ata-aos="fade-down-right">
                         <div class="card bg-white">
                             <div class="card-body mb-4">
                                 <h5 class="card-title">FCSAND CSOSJOIN HANDSTO SUPPORTOVER220CHILDREN</h5>
@@ -139,7 +139,7 @@
                             </div>
                         </div>
                     </div>
-                    <div class="col-md-6 item">
+                    <div class="col-md-6 item" ata-aos="fade-down-left">
                         <div class="card bg-white">
                             <div class="card-body mb-4">
                                 <h5 class="card-title">FCSAND CSOSJOIN HANDSTO SUPPORTOVER220CHILDREN</h5>
@@ -157,7 +157,7 @@
                 </div>
 
                 <div class="row">
-                    <div class="col-md-6 item">
+                    <div class="col-md-6 item" ata-aos="fade-down-right">
                         <div class="card bg-white">
                             <div class="card-body mb-4">
                                 <h5 class="card-title">FCSAND CSOSJOIN HANDSTO SUPPORTOVER220CHILDREN</h5>
@@ -171,7 +171,7 @@
                             </div>
                         </div>
                     </div>
-                    <div class="col-md-6 item">
+                    <div class="col-md-6 item" ata-aos="fade-down-left">
                         <div class="card bg-white">
                             <div class="card-body mb-4">
                                 <h5 class="card-title">FCSAND CSOSJOIN HANDSTO SUPPORTOVER220CHILDREN</h5>
@@ -196,10 +196,10 @@
     
      <section id="our-gallery"> 
         <div class="d-flex container flex-column  position-relative">
-            <div class="foundation-news-title text-center mx-2">
+            <div class="foundation-news-title text-center mx-2" data-aos="zoom-in-up">
                 <h2>Our Gallery</h2>
             </div>
-            <div class="row">
+            <div class="row" data-aos="zoom-in-up">
                 <div class="col-md-6 position-relative" >
                     <div class="d-flex flex-column my-4">
                         <div class="item">
@@ -254,7 +254,7 @@
             <div class="postcast-content">
 
                 <div class="row">
-                    <div class="col-md-8 offset-2 item mt-3">
+                    <div class="col-md-8 offset-2 item mt-3" data-aos="zoom-in-down">
                         <div class="card card-story bg-white">
                             <div class="story-img">
                                 <img src="{{ ('frontend/images/Francis-Kiwanga.png') }}" class="team-image" alt="">
@@ -274,7 +274,7 @@
 
 
     <section class="bg-white"> 
-        <div class="d-flex container flex-column ">
+        <div class="d-flex container flex-column " data-aos="zoom-in-up"> 
             <div class="section-title text-center mb-4">
                 <h2>Financial Reports</h2>
             </div>

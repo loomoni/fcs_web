@@ -164,25 +164,36 @@
       });
     });
 
-    // Get references to the elements
-    var menuToggleIcon = document.getElementById("menuToggleIcon");
-    var mySidenav = document.getElementById("mySidenav");
+// Get references to the elements
+var menuToggleIcon = document.getElementById("menu-icon");
+var mySidenav = document.getElementById("mySidenav");
+var closeBtn = document.querySelector(".closebtn");
 
-    // Function to show the menu
-    function showMenu() {
-        mySidenav.style.display = "block";
-    }
+// Function to show the menu
+function showMenu() {
+  console.log("Show the menu");
+  mySidenav.style.display = "block";
+}
 
-    // Function to hide the menu
-    function hideMenu() {
-        mySidenav.style.display = "none";
-    }
+// Function to hide the menu
+function hideMenu() {
+    mySidenav.style.display = "none";
+}
 
-    // Attach event listeners for mouseenter and mouseleave events
-    menuToggleIcon.addEventListener("mouseenter", showMenu);
-    mySidenav.addEventListener("mouseleave", hideMenu);
-    
+// Attach event listener for mouseenter event to show the menu
+menuToggleIcon.addEventListener("mouseenter", showMenu);
+
+// Attach event listener for click event on close button to hide the menu
+closeBtn.addEventListener("click", hideMenu);
+
+
+
+
+
+
 </script>
+
+
 
 
   <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyAChJNvE8x9PwAl3-TozmGp1mDCy9anvjI&callback=myMap"></script>

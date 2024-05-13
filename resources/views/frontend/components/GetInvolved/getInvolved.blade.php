@@ -46,7 +46,7 @@
         <div class="container">
             <div class="foundation-news-content">
                 <div class="row">
-                    <div class="col-md-6">
+                    <div class="col-md-6" data-aos="fade-up">
                         <form>
                             <div class="form-floating mb-3">
                                 <input type="email" class="form-control" id="floatingInput" placeholder="name@example.com">
@@ -82,7 +82,7 @@
                             <button type="submit" class="btn btn-warning px-5">Send</button>
                           </form>
                     </div>
-                    <div class="col-md-6">
+                    <div class="col-md-6" data-aos="fade-down">
                         <div class="card bg-light-gray">
                             <div class="card-body">
                                 As an operating foundation, our programs and the partnerships we build work to contribute to sustainable and inclusive development in all 31 regions of Tanzania through strengthening capabilities and sharing resources. We have partnered with over 10,000 civil society, community groups, and other development actors all over the country.
@@ -137,10 +137,10 @@
             <div class="foundation-news-content">
 
                 <div class="row">
-                    <div class="col-md-6">
+                    <div class="col-md-6" data-aos="fade-up-right">
                         <img src="{{ url('frontend/images/map1.png') }}" alt="">
                     </div>
-                    <div class="col-md-6">
+                    <div class="col-md-6" data-aos="fade-up-left">
                         <div class="card">
                             <div class="card-body">
                                 As an operating foundation, our programs and the partnerships we build work to contribute to sustainable and inclusive development in all 31 regions of Tanzania through strengthening capabilities and sharing resources. We have partnered with over 10,000 civil society, community groups, and other development actors all over the country.
@@ -159,7 +159,7 @@
         <div class="container">
             <div class="postcast-content">
                 <div class="row">
-                    <div class="col-md-8 item">
+                    <div class="col-md-8 item" data-aos="fade-down-right">
                         <div class="card card-updates bg-white">
                             <div class="card-body text-center mb-4">
                                 <div class="row">
@@ -178,7 +178,7 @@
                         </div>
                     </div>
 
-                    <div class="col-md-4">
+                    <div class="col-md-4" data-aos="fade-down-left">
                         <div class="card card-updates bg-white">
                             <div class="card-body text-center d-flex align-items-center justify-content-center">
                                 <h2 class="card-title"><strong class="text-dinim">Other Service <br> Support <br> <i class="bi bi-arrow-right-circle-fill icon-service"></i> </strong></h2>

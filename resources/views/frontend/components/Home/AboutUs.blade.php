@@ -6,9 +6,14 @@
                     <h3>{{ $Aboutus->title }}</h3>
                 </div>
                 <!-- About section -->
-                <div id="who-we-are">
+                {{-- <div data-aos="flip-left"
+                    data-aos-easing="ease-out-cubic"
+                    data-aos-duration="2000"> --}}
+                <div id="who-we-are"  data-aos="flip-left"
+                                    data-aos-easing="ease-out-cubic"
+                                    data-aos-duration="2000">
                     <div class="row h-100">
-                        <div class="col-lg-6 d-flex align-items-start justify-content-start text-dinim" data-aos="zoom-in">
+                        <div class="col-lg-6 d-flex align-items-start justify-content-start text-dinim">
                             <div class="d-flex flex-column">
                                 <p class="who-title">
                                   {!! $Aboutus->description !!}

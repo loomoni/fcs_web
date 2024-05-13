@@ -41,7 +41,7 @@
     <section>
         <div class="d-flex container">
             <div class="row">
-                <div class="col-md-6 d-flex flex-row mt-2 position-relative">
+                <div class="col-md-6 d-flex flex-row mt-2 position-relative" data-aos="fade-up">
                     <div class="card bg-dinim text-white">
                         <!-- Dont use multiple card bodies, just one is enough -->
                         <div class="card-body story-card-body">
@@ -60,7 +60,7 @@
                     <div class="vertical-line-4"></div>
                 </div>
 
-                <div class="col-md-6">
+                <div class="col-md-6" data-aos="fade-down">
                     <img src="{{ url('frontend/images/tree.png') }}" class="tree-img" alt="Image">
                 </div>
             </div>
@@ -74,7 +74,7 @@
                 <h2>Our Story</h2>
             </div>
             <div class="row">
-                <div class="col-md-6 d-flex flex-row mt-2">
+                <div class="col-md-6 d-flex flex-row mt-2" data-aos="fade-right">
                     <div class="card text-dinim">
                         <!-- Dont use multiple card bodies, just one is enough -->
                         <div class="card-body ">
@@ -94,7 +94,7 @@
                 </div>
 
             
-                <div class="col-md-6 position-relative" >
+                <div class="col-md-6 position-relative" data-aos="fade-left">
                     <div class="vertical-line-2"></div>
                     <div class="d-flex flex-column my-4">
                         <div class="item">
@@ -129,7 +129,7 @@
                 </div>
 
                 <div class="row">
-                    <div class="col-md-3 item">
+                    <div class="col-md-3 item" data-aos="fade-up-right">
                         <div class="card bg-transparent">
                             <div class="w-100 d-flex justify-content-center mt-4">
                                 <img src="{{ url('frontend/assets/img/home/Francis-Kiwanga.png') }}" class="team-img" alt="...">
@@ -142,7 +142,7 @@
                             </div>
                         </div>
                     </div>
-                    <div class="col-md-3 item">
+                    <div class="col-md-3 item" data-aos="fade-up-left">
                         <div class="card bg-transparent">
                             <div class="w-100 d-flex justify-content-center mt-4">
                                 <img src="{{ url('frontend/assets/img/home/Edna-160x160.jpg') }}" class="team-img" alt="...">
@@ -155,7 +155,7 @@
                             </div>
                         </div>
                     </div>
-                      <div class="col-md-3 item">
+                      <div class="col-md-3 item" data-aos="fade-down-right">
                         <div class="card bg-transparent">
                             <div class="w-100 d-flex justify-content-center mt-4">
                                 <img src="{{ url('frontend/assets/img/home/Haule-160x160.jpg') }}" class="team-img" alt="...">
@@ -168,7 +168,7 @@
                             </div>
                         </div>
                     </div>
-                    <div class="col-md-3 item">
+                    <div class="col-md-3 item" data-aos="fade-down-left">
                         <div class="card bg-transparent">
                             <div class="w-100 d-flex justify-content-center mt-4">
                                 <img src="{{ url('frontend/assets/img/home/Nasim-160x160.jpg') }}" class="team-img" alt="...">
@@ -194,7 +194,7 @@
                 </div>
 
                 <div class="row team-man-img">
-                    <div class="col-md-2 item">
+                    <div class="col-md-2 item" data-aos="fade-down-left">
                         <div class="card bg-transparent">
                             <div class="w-100 d-flex justify-content-center mt-4">
                                 <img src="{{ url('frontend/assets/img/home/Karin-160x160.jpg') }}" class="team-img" alt="...">
@@ -205,7 +205,7 @@
                             </div>
                         </div>
                     </div>
-                    <div class="col-md-2 item">
+                    <div class="col-md-2 item" data-aos="flip-left">
                         <div class="card bg-transparent">
                             <div class="w-100 d-flex justify-content-center mt-4">
                                 <img src="{{ url('frontend/assets/img/home/Gina-160x160.jpg') }}" class="team-img" alt="...">
@@ -216,7 +216,7 @@
                             </div>
                         </div>
                     </div>
-                      <div class="col-md-2 item">
+                      <div class="col-md-2 item" data-aos="flip-right">
                         <div class="card bg-transparent">
                             <div class="w-100 d-flex justify-content-center mt-4">
                                 <img src="{{ url('frontend/assets/img/home/Yonah-Lyimo--160x160.png') }}" class="team-img" alt="...">
@@ -227,7 +227,7 @@
                             </div>
                         </div>
                     </div>
-                    <div class="col-md-2 item">
+                    <div class="col-md-2 item" data-aos="flip-up">
                         <div class="card bg-transparent">
                             <div class="w-100 d-flex justify-content-center mt-4">
                                 <img src="{{ url('frontend/assets/img/home/Nemes-160x160.jpg') }}" class="team-img" alt="...">
@@ -238,7 +238,7 @@
                             </div>
                         </div>
                     </div>
-                    <div class="col-md-2 item">
+                    <div class="col-md-2 item" data-aos="flip-down">
                         <div class="card bg-transparent">
                             <div class="w-100 d-flex justify-content-center mt-4">
                                 <img src="{{ url('frontend/assets/img/home/Rehema-160x160.jpg') }}" class="team-img" alt="...">
@@ -249,7 +249,7 @@
                             </div>
                         </div>
                     </div>
-                    <div class="col-md-2 item">
+                    <div class="col-md-2 item" data-aos="zoom-in">
                         <div class="card bg-transparent">
                             <div class="w-100 d-flex justify-content-center mt-4">
                                 <img src="{{ url('frontend/assets/img/home/Tusekile-160x160.jpg') }}" class="team-img" alt="...">
@@ -260,7 +260,7 @@
                             </div>
                         </div>
                     </div>
-                    <div class="col-md-2 item">
+                    <div class="col-md-2 item" data-aos="zoom-in-up">
                         <div class="card bg-transparent">
                             <div class="w-100 d-flex justify-content-center mt-4">
                                 <img src="{{ url('frontend/assets/img/home/Bertha-160x160.jpg') }}" class="team-img" alt="...">
@@ -271,7 +271,7 @@
                             </div>
                         </div>
                     </div>
-                    <div class="col-md-2 item">
+                    <div class="col-md-2 item" data-aos="zoom-in-down">
                         <div class="card bg-transparent">
                             <div class="w-100 d-flex justify-content-center mt-4">
                                 <img src="{{ url('frontend/assets/img/home/Ngala-160x160.jpg') }}" class="team-img" alt="...">
@@ -283,7 +283,7 @@
                             </div>
                         </div>
                     </div>
-                    <div class="col-md-2 item">
+                    <div class="col-md-2 item" data-aos="zoom-in-left">
                         <div class="card bg-transparent">
                             <div class="w-100 d-flex justify-content-center mt-4">
                                 <img src="{{ url('frontend/assets/img/home/Bart-Web-160x160.jpg') }}" class="team-img" alt="...">
@@ -294,7 +294,7 @@
                             </div>
                         </div>
                     </div>
-                    <div class="col-md-2 item">
+                    <div class="col-md-2 item" data-aos="zoom-in-right">
                         <div class="card bg-transparent">
                             <div class="w-100 d-flex justify-content-center mt-4">
                                 <img src="{{ url('frontend/assets/img/home/Shamsia-160x160.jpg') }}" class="team-img" alt="...">
@@ -305,7 +305,7 @@
                             </div>
                         </div>
                     </div>
-                    <div class="col-md-2 item">
+                    <div class="col-md-2 item" data-aos="zoom-out-up">
                         <div class="card bg-transparent">
                             <div class="w-100 d-flex justify-content-center mt-4">
                                 <img src="{{ url('frontend/assets/img/home/Maria-160x160.jpg') }}" class="team-img" alt="...">
@@ -316,7 +316,7 @@
                             </div>
                         </div>
                     </div>
-                    <div class="col-md-2 item">
+                    <div class="col-md-2 item" data-aos="zoom-out">
                         <div class="card bg-transparent">
                             <div class="w-100 d-flex justify-content-center mt-4">
                                 <img src="{{ url('frontend/assets/img/home/Basil-160x160.jpg') }}" class="team-img" alt="...">
@@ -346,7 +346,7 @@
                 </div>
 
                 <div class="row">
-                    <div class="col-md-2 item">
+                    <div class="col-md-2 item" data-aos="zoom-out-down">
                         <div class="card bg-transparent">
                             <div class="w-100 d-flex justify-content-start mt-4">
                                 <img src="{{ url('frontend/images/gender.png') }}" class="team-img" alt="...">
@@ -357,7 +357,7 @@
                             </div>
                         </div>
                     </div>
-                    <div class="col-md-2 item">
+                    <div class="col-md-2 item" data-aos="zoom-out-right">
                         <div class="card bg-transparent">
                             <div class="w-100 d-flex justify-content-center mt-4">
                                 <img src="{{ url('frontend/images/hands.png') }}" class="team-img" alt="...">
@@ -368,7 +368,7 @@
                             </div>
                         </div>
                     </div>
-                      <div class="col-md-2 item">
+                      <div class="col-md-2 item" data-aos="zoom-out-left">
                         <div class="card bg-transparent">
                             <div class="w-100 d-flex justify-content-center mt-4">
                                 <img src="{{ url('frontend/images/face.png') }}" class="team-img" alt="...">
@@ -379,7 +379,8 @@
                             </div>
                         </div>
                     </div>
-                    <div class="col-md-2 item">
+                    <div class="col-md-2 item" data-aos="fade-up"
+                                                data-aos-duration="3000">
                         <div class="card bg-transparent">
                             <div class="w-100 d-flex justify-content-center mt-4">
                                 <img src="{{ url('frontend/images/inclusion.png') }}" class="team-img" alt="...">
@@ -391,7 +392,9 @@
                         </div>
                     </div>
 
-                    <div class="col-md-2 item">
+                    <div class="col-md-2 item" data-aos="fade-down"
+                                                data-aos-easing="linear"
+                                                data-aos-duration="1500">
                         <div class="card bg-transparent">
                             <div class="w-100 d-flex justify-content-center mt-4">
                                 <img src="{{ url('frontend/images/intergrity.png') }}" class="team-img" alt="...">
@@ -403,7 +406,9 @@
                         </div>
                     </div>
 
-                    <div class="col-md-2 item">
+                    <div class="col-md-2 item"  data-aos="fade-right"
+                                                data-aos-offset="300"
+                                                data-aos-easing="ease-in-sine">
                         <div class="card bg-transparent">
                             <div class="w-100 d-flex justify-content-center mt-4">
                                 <img src="{{ url('frontend/images/learning.png') }}" class="team-img" alt="...">
@@ -423,7 +428,9 @@
     <section> 
         <div class="d-flex container flex-column ">
             <div class="row">
-                <div class="col-md-6 d-flex flex-row mt-2">
+                <div class="col-md-6 d-flex flex-row mt-2" data-aos="fade-down"
+                                                            data-aos-easing="linear"
+                                                            data-aos-duration="1500">
                     <div class="card w-100">
                         <div class="card-body w-100 d-flex justify-content-end align-items-center ">
                             <h3 style="font-weight: normal;"> Abrief History of <br>
@@ -434,7 +441,9 @@
                     </div>
                 </div>
 
-                <div class="col-md-6">
+                <div class="col-md-6"  data-aos="fade-right"
+                                        data-aos-offset="300"
+                                        data-aos-easing="ease-in-sine">
                     <div class="d-flex flex-column my-4">
                         <div class="item">
                             <div class="card bg-white">

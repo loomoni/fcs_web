@@ -83,7 +83,9 @@
                                 <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
                               </div>
                               <div class="modal-body">
-                                  <p>Facilitate In publishing and graphic design, Lorem ipsum is a placeholder text commonly used.</p>
+                                <p style="text-align: center">31+ million Tanzanian lives empowered</p>
+                                <p style="text-align: center">200+ billion Tanzanian shillings mobilized development actors</p>
+                                <p style="text-align: center">Resources invested in enabling more than 5,000 CSAs countrywide </p>
                                   <img src="{{ url('frontend/images/Capture.jpg') }}" class="d-block w-100" alt="...">
                               </div>
                               <div class="modal-footer">
@@ -107,6 +109,7 @@
                               </div>
                               <div class="modal-body">
                                   <p>Capacitate In publishing and graphic design, Lorem ipsum is a placeholder text commonly used.</p>
+                                  <img src="{{ url('frontend/images/Capture.jpg') }}" class="d-block w-100" alt="...">
                               </div>
                               <div class="modal-footer">
                                 <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
@@ -173,13 +176,12 @@
             <a href="{{ url('get-involved') }}" class="text-dinim">Get involved</a>
             <a href="{{ url('media') }}" class="text-dinim">Media</a> --}}
         {{-- </div>
-    </div> --}} --}}
-
+    </div> --}}
 
     <div class="menu-toggle p-absolute">
-        <div class="menu-toggle-icon" id="menuToggleIcon">
+        <div class="menu-toggle-icon">
             <!-- Your icon or text here -->
-            <span style="font-size:30px;cursor:pointer" id="menu-icon" onclick="openNav()">&#9776; Menu</span>
+            <span style="font-size:30px;cursor:pointer; color: #398abd" id="menu-icon" onclick="openNav()">&#9776; Menu</span>
         </div>
         
         <div id="mySidenav" class="sidenav mx-2">

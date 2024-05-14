@@ -8,14 +8,14 @@
                 </div>
 
                 <div class="row">
-                    <div class="col-md-6 item" data-aos="fade-right">
+                    <div class="col-md-6 item" data-aos="fade-right" data-aos-once="false">
                         <div class="card bg-white">
                             <div class="card-body ">
                                 <p class="card-text"><strong class="text-dinim">Our Mission</strong> {{ $Mission->description }} </p>
                             </div>
                         </div>
                     </div>
-                    <div class="col-md-6 item" data-aos="fade-left">
+                    <div class="col-md-6 item" data-aos="fade-left" data-aos-once="false">
                         <div class="card bg-white">
                             <div class="card-body ">
                                 <p class="card-text"><strong class="text-yellow-sunshine">We envision</strong> {{ $Vission->description }} </p>

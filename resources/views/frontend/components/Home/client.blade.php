@@ -1,12 +1,12 @@
     <!-- ======= Clients ======= -->
     <section id="clients" class="clients">
-        <div class="container" data-aos="fade-up">
+        <div class="container" data-aos="fade-up" data-aos-once="false">
             <div class="who-are-we">
                
                 <!-- About section -->
                 <div id="who-we-are">
                     <div class="row h-100">
-                        <div class="col-lg-6 d-flex align-items-start justify-content-start" data-aos="fade-right">
+                        <div class="col-lg-6 d-flex align-items-start justify-content-start" data-aos="fade-right" data-aos-once="false">
                             <div class="d-flex flex-column">
                                 <div class="about-title">
                                     <h3>Our Partners</h3>
@@ -20,8 +20,8 @@
                             </div>
                         </div>
                         
-                        <div class="col-lg-6 pt-4 d-flex align-items-center pt-lg-0" data-aos="fade-left">
-                            <div class="row no-gutters clidents-wrap clearfisx" data-aos="fade-up">
+                        <div class="col-lg-6 pt-4 d-flex align-items-center pt-lg-0" data-aos="fade-left" data-aos-once="false">
+                            <div class="row no-gutters clidents-wrap clearfisx" data-aos="fade-up" data-aos-once="false">
                                 @if ($client != null)
                                     @foreach ($client as $data)
                                         <div class="col-lg-6 col-md-6 col-6">

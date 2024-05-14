@@ -3,7 +3,7 @@
         <div class="container">
             <div class="postcast-content">
                 <div class="row">
-                    <div class="col-md-8 offset-2 item mt-3" data-aos="zoom-in-up">
+                    <div class="col-md-8 offset-2 item mt-3" data-aos="zoom-in-up" data-aos-once="false">
                         <div class="card card-story bg-white">
                             <div class="story-img">
                                 <img src="{{ url('frontend/images/Francis-Kiwanga.png') }}" class="team-image" alt="">

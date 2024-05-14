@@ -65,12 +65,12 @@
 
   <!-- ======= Our Story ======= -->
   <section id="our-story" class="about-us">
-    <div class="container" data-aos="fade-up">
+    <div class="container" data-aos="fade-up" data-aos-once="false">
         <div class="who-are-we">
             <!-- About section -->
             <div id="who-we-are">
                 <div class="row g-5 h-100">
-                    <div class="col-lg-6 d-flex align-items-center flex-column justify-content-start text-dinim" data-aos="fade-right">
+                    <div class="col-lg-6 d-flex align-items-center flex-column justify-content-start text-dinim" data-aos="fade-right" data-aos-once="false">
                         <div class="d-flex flex-column align-items-end">
                             <div class="d-flex  align-items-center justify-content-center w-75">
                                 <div class="text-dinim text-center about-title">
@@ -85,7 +85,7 @@
                         </div>
                     </div>
                     
-                    <div class="col-lg-6 pt-4 d-flex  align-items-center pt-lg-0" data-aos="fade-left">
+                    <div class="col-lg-6 pt-4 d-flex  align-items-center pt-lg-0" data-aos="fade-left" data-aos-once="false">
                         <div class="d-flex flex-column story-left-member w-75">
                             <p class="independent-title mt-2 text-dinim">
                                 Established over 2 decades ago, FCS is the largest local

@@ -1,5 +1,7 @@
   <!-- Vendor JS Files -->
-  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.4/jquery.min.js"></script>  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.3/umd/popper.min.js" integrity="sha384-vFJXuSJphROIrBnz7yo7oB41mKfc8JzQZiCq4NCceLEaO4IHwicKwpJf9c9IpFgh" crossorigin="anonymous"></script>
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.4/jquery.min.js" crossorigin="anonymous"></script> 
+  {{-- <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.7.1/jquery.min.js" integrity="sha512-v2CJ7UaYy4JwqLDIrZUI/4hqeoQieOmAZNXBeQyjo21dadnwR+8ZaIJVT8EE2iyI61OV8e6M8PP2/4hpQINQ/g==" crossorigin="anonymous" referrerpolicy="no-referrer"></script> --}}
+   <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.3/umd/popper.min.js" integrity="sha384-vFJXuSJphROIrBnz7yo7oB41mKfc8JzQZiCq4NCceLEaO4IHwicKwpJf9c9IpFgh" crossorigin="anonymous"></script>
   <script src="{{ url('frontend/assets/vendor/aos/aos.js') }}"></script>
   <script src="{{ url('frontend/assets/vendor/bootstrap/js/bootstrap.bundle.min.js') }}"></script>
   <script src="{{ url('frontend/assets/vendor/glightbox/js/glightbox.min.js') }}"></script>
@@ -50,18 +52,13 @@
           document.getElementById("mySidenav").style.width = "0";
           document.getElementById("menu-icon").style.display = "block";
         }
+
     </script>
     <script src='//translate.google.com/translate_a/element.js?cb=googleTranslateElementInit'></script>
 
     
   <script>
-    function myMap() {
-        var mapProp= {
-          center:new google.maps.LatLng(39.2083,6.7924),
-          zoom:5,
-        };
-        var map = new google.maps.Map(document.getElementById("googleMap"),mapProp);
-    }
+
 
     /**
     * Scroll management
@@ -115,7 +112,7 @@
 		$('.owl-carousel').owlCarousel({
 			items:1,
 			loop:true,
-			margin:20,
+			margin:17,
 			nav:true,
             autoplay:true,
             autoplayTimeout:5000,
@@ -162,32 +159,43 @@
       AccelerateModal._element.addEventListener("mouseleave", function () {
         AccelerateModal.hide();
       });
-    });
+     });
 
-// Get references to the elements
-var menuToggleIcon = document.getElementById("menu-icon");
-var mySidenav = document.getElementById("mySidenav");
-var closeBtn = document.querySelector(".closebtn");
+        // Get the carousel instance
+        var carousel = document.getElementById('carouselExampleDark');
 
-// Function to show the menu
-function showMenu() {
-  console.log("Show the menu");
-  mySidenav.style.display = "block";
-}
+        // Get the buttons
+        var topButton = document.getElementById('facilitateButton');
+        var middleButton = document.getElementById('capacitateButton');
+        var bottomButton = document.getElementById('accelerateButton');
 
-// Function to hide the menu
-function hideMenu() {
-    mySidenav.style.display = "none";
-}
+        // Initial text content of buttons
+        var initialTopButtonText = topButton.innerHTML;
+        var initialMiddleButtonText = middleButton.innerHTML;
+        var initialBottomButtonText = bottomButton.innerHTML;
 
-// Attach event listener for mouseenter event to show the menu
-menuToggleIcon.addEventListener("mouseenter", showMenu);
+        // Listen for the carousel slide event
+        carousel.addEventListener('slid.bs.carousel', function () {
+        // Get the index of the active slide
+        var activeIndex = $('.carousel-item.active').index();
 
-// Attach event listener for click event on close button to hide the menu
-closeBtn.addEventListener("click", hideMenu);
+        // Rotate the button texts with animation
+        setTimeout(function() {
+            var temp = topButton.innerHTML;
+            topButton.innerHTML = middleButton.innerHTML;
+            middleButton.innerHTML = bottomButton.innerHTML;
+            bottomButton.innerHTML = temp;
+        }, 100); // Adjust the delay as needed
 
-
-
+        // Reset the carousel to the initial state after the third slide
+        if (activeIndex === 2) {
+            setTimeout(function() {
+            topButton.innerHTML = initialTopButtonText;
+            middleButton.innerHTML = initialMiddleButtonText;
+            bottomButton.innerHTML = initialBottomButtonText;
+            }, 100); // Adjust the delay as needed
+        }
+        });
 
 
 
@@ -196,4 +204,4 @@ closeBtn.addEventListener("click", hideMenu);
 
 
 
-  <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyAChJNvE8x9PwAl3-TozmGp1mDCy9anvjI&callback=myMap"></script>
+  {{-- <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyAChJNvE8x9PwAl3-TozmGp1mDCy9anvjI&callback=myMap"></script> --}}

@@ -46,7 +46,7 @@
         <div class="container">
             <div class="foundation-news-content">
                 <div class="row">
-                    <div class="col-md-6" data-aos="fade-up">
+                    <div class="col-md-6" data-aos="fade-up" data-aos-once="false">
                         <form>
                             <div class="form-floating mb-3">
                                 <input type="email" class="form-control" id="floatingInput" placeholder="name@example.com">
@@ -82,7 +82,7 @@
                             <button type="submit" class="btn btn-warning px-5">Send</button>
                           </form>
                     </div>
-                    <div class="col-md-6" data-aos="fade-down">
+                    <div class="col-md-6" data-aos="fade-down" data-aos-once="false">
                         <div class="card bg-light-gray">
                             <div class="card-body">
                                 As an operating foundation, our programs and the partnerships we build work to contribute to sustainable and inclusive development in all 31 regions of Tanzania through strengthening capabilities and sharing resources. We have partnered with over 10,000 civil society, community groups, and other development actors all over the country.
@@ -96,20 +96,20 @@
 
                                     <div class="d-flex flex-row">
                                         <div class="rounded-box">
-                                            <i class="bi bi-phone inner-icon"></i>
+                                            <i class="bi bi-globe2 inner-icon"></i>
                                         </div>
                                         <p class="mx-2">
-                                            678F+F69, <br> Madai 
-                                            Cres,DaresSalaam
+                                            Madai Crescent 7 Ada Estate, <br> P.O. Box 7192 Dar es Salaam , <br> 
+                                            Dar es Salaam, Tanzania.
                                         </p>
                                     </div>
 
                                     <div class="d-flex flex-row mt-3">
                                         <div class="rounded-box">
-                                            <i class="bi bi-phone inner-icon"></i>
+                                            <i class="bi bi-envelope inner-icon"></i>
                                         </div>
-                                        <p class="mx-2">
-                                            www.thefoundation.or.tz
+                                        <p class="mx-2 my-2">
+                                            info@thefoundation.or.tz
                                         </p>
                                     </div>
 
@@ -118,7 +118,7 @@
                                             <i class="bi bi-phone inner-icon"></i>
                                         </div>
                                         <div>
-                                            <p class="mx-2">
+                                            <p class="mx-2 my-2">
                                                 +255754005708
                                             </p>
                                         </div>
@@ -137,13 +137,14 @@
             <div class="foundation-news-content">
 
                 <div class="row">
-                    <div class="col-md-6" data-aos="fade-up-right">
-                        <img src="{{ url('frontend/images/map1.png') }}" alt="">
+                    <div class="col-md-6" data-aos="fade-up-right" data-aos-once="false">
+                        <div style="width: 100%"><iframe width="100%" height="400" frameborder="0" scrolling="no" marginheight="0" marginwidth="0" src="https://maps.google.com/maps?width=100%25&amp;height=500&amp;hl=en&amp;q=The%20Foundation%20For%20Civil%20Society+(Your%20Business%20Name)&amp;t=&amp;z=14&amp;ie=UTF8&amp;iwloc=B&amp;output=embed"><a href="https://www.gps.ie/sport-gps/">fitness tracker</a></iframe></div>
                     </div>
-                    <div class="col-md-6" data-aos="fade-up-left">
+                    <div class="col-md-6" data-aos="fade-up-left" data-aos-once="false">
                         <div class="card">
                             <div class="card-body">
-                                As an operating foundation, our programs and the partnerships we build work to contribute to sustainable and inclusive development in all 31 regions of Tanzania through strengthening capabilities and sharing resources. We have partnered with over 10,000 civil society, community groups, and other development actors all over the country.
+                                <p>As an operating foundation, our programs and the partnerships we build work to contribute to sustainable and inclusive development in all 31 regions of Tanzania through strengthening capabilities and sharing resources. We have partnered with over 10,000 civil society, community groups, and other development actors all over the country.</p>
+                                <p>As an operating foundation, our programs and the partnerships we build work to contribute to sustainable and inclusive development in all 31 regions of Tanzania through strengthening capabilities and sharing resources. We have partnered with over 10,000 civil society, community groups, and other development actors all over the country.</p>
                             </div>
                         </div>
                     </div>
@@ -159,7 +160,7 @@
         <div class="container">
             <div class="postcast-content">
                 <div class="row">
-                    <div class="col-md-8 item" data-aos="fade-down-right">
+                    <div class="col-md-8 item" data-aos="fade-down-right" data-aos-once="false">
                         <div class="card card-updates bg-white">
                             <div class="card-body text-center mb-4">
                                 <div class="row">
@@ -178,7 +179,7 @@
                         </div>
                     </div>
 
-                    <div class="col-md-4" data-aos="fade-down-left">
+                    <div class="col-md-4" data-aos="fade-down-left" data-aos-once="false">
                         <div class="card card-updates bg-white">
                             <div class="card-body text-center d-flex align-items-center justify-content-center">
                                 <h2 class="card-title"><strong class="text-dinim">Other Service <br> Support <br> <i class="bi bi-arrow-right-circle-fill icon-service"></i> </strong></h2>

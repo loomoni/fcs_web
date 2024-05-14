@@ -45,12 +45,12 @@
       <section class="bg-light-gray">
         <div class="container">
             <div class="foundation-news-content">
-                <div class="foundation-news-title text-center mb-3" data-aos="fade-up-left">
+                <div class="foundation-news-title text-center mb-3" data-aos="fade-up-left" data-aos-once="false">
                     <h2><strong>News</strong></h2>
                 </div>
 
                 <div class="row">
-                    <div class="col-md-3 item" data-aos="fade-up">
+                    <div class="col-md-3 item" data-aos="fade-up" data-aos-once="false">
                         <div class="card bg-transparent">
                             <div class="w-100 d-flex justify-content-center mt-4">
                                 <img src="{{ url('frontend/assets/img/home/matching_fund.jpg') }}" class="card-img-top" alt="...">
@@ -65,7 +65,7 @@
                             </div>
                         </div>
                     </div>
-                    <div class="col-md-3 item" data-aos="fade-down">
+                    <div class="col-md-3 item" data-aos="fade-down" data-aos-once="false">
                         <div class="card bg-transparent">
                             <div class="w-100 d-flex justify-content-center mt-4">
                                 <img src="{{ url('frontend/assets/img/home/uraia_project-1.jpg') }}" class="card-img-top" alt="...">
@@ -80,7 +80,7 @@
                             </div>
                         </div>
                     </div>
-                    <div class="col-md-3 item" data-aos="fade-right">
+                    <div class="col-md-3 item" data-aos="fade-right" data-aos-once="false">
                         <div class="card bg-transparent">
                             <div class="w-100 d-flex justify-content-center mt-4">
                                 <img src="{{ url('frontend/assets/img/home/G57A6554.jpg') }}" class="card-img-top" alt="...">
@@ -95,7 +95,7 @@
                             </div>
                         </div>
                     </div>
-                    <div class="col-md-3 item" data-aos="fade-left">
+                    <div class="col-md-3 item" data-aos="fade-left" data-aos-once="false">
                         <div class="card bg-transparent">
                             <div class="w-100 d-flex justify-content-center mt-4">
                                 <img src="{{ url('frontend/assets/img/home/Aid-Localization.jpg') }}" class="card-img-top w-100" alt="...">
@@ -119,8 +119,8 @@
        <!-- ======= Podcast ======= -->
        <section id="podcast" class="podcast bg-white">
         <div class="container">
-            <div class="postcast-content-1" data-aos="fade-up-left">
-                <div class="section-title text-center mb-4" data-aos="fade-down-right">
+            <div class="postcast-content-1" data-aos="fade-up-left" data-aos-once="false">
+                <div class="section-title text-center mb-4" data-aos="fade-down-right" data-aos-once="false">
                     <h2>Podcast</h2>
                 </div>
 
@@ -196,10 +196,10 @@
     
      <section id="our-gallery"> 
         <div class="d-flex container flex-column  position-relative">
-            <div class="foundation-news-title text-center mx-2" data-aos="zoom-in-up">
+            <div class="foundation-news-title text-center mx-2" data-aos="zoom-in-up" data-aos-once="false">
                 <h2>Our Gallery</h2>
             </div>
-            <div class="row" data-aos="zoom-in-up">
+            <div class="row" data-aos="zoom-in-up" data-aos-once="false">
                 <div class="col-md-6 position-relative" >
                     <div class="d-flex flex-column my-4">
                         <div class="item">
@@ -254,7 +254,7 @@
             <div class="postcast-content">
 
                 <div class="row">
-                    <div class="col-md-8 offset-2 item mt-3" data-aos="zoom-in-down">
+                    <div class="col-md-8 offset-2 item mt-3" data-aos="zoom-in-down" data-aos-once="false">
                         <div class="card card-story bg-white">
                             <div class="story-img">
                                 <img src="{{ ('frontend/images/Francis-Kiwanga.png') }}" class="team-image" alt="">
@@ -274,7 +274,7 @@
 
 
     <section class="bg-white"> 
-        <div class="d-flex container flex-column " data-aos="zoom-in-up"> 
+        <div class="d-flex container flex-column " data-aos="zoom-in-up" data-aos-once="false"> 
             <div class="section-title text-center mb-4">
                 <h2>Financial Reports</h2>
             </div>

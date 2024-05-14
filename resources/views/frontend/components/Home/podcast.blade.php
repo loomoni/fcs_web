@@ -7,7 +7,7 @@
                 </div>
 
                 <div class="row">
-                    <div class="col-md-6 item" data-aos="fade-down-right">
+                    <div class="col-md-6 item" data-aos="fade-down-right" data-aos-once="false">
                         <div class="card bg-white">
                             <div class="card-body mb-4">
                                 <h5 class="card-title">FCSAND CSOSJOIN HANDSTO SUPPORTOVER220CHILDREN</h5>
@@ -21,7 +21,7 @@
                             </div>
                         </div>
                     </div>
-                    <div class="col-md-6 item" data-aos="fade-down-left">
+                    <div class="col-md-6 item" data-aos="fade-down-left" data-aos-once="false">
                         <div class="card bg-white">
                             <div class="card-body mb-4">
                                 <h5 class="card-title">FCSAND CSOSJOIN HANDSTO SUPPORTOVER220CHILDREN</h5>

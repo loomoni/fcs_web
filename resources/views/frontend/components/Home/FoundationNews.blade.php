@@ -10,7 +10,7 @@
 
                 <div class="owl-carousel owl-theme row">
                     @foreach ($currentNews as $data)
-                        <div class="w-100 item">
+                        <div class="w-100 item px-2">
                             <div class="card bg-white" style="min-height: 40vh;">
                                 <div class="w-100 d-flex justify-content-center mt-4">
                                     <img src="/images/Blog/{{ $data->image }}" class="card-img-top" alt="...">
@@ -27,7 +27,7 @@
                         </div>
                     @endforeach
                    
-                    <div class="w-100 item">
+                    <div class="w-100 item  px-2">
                         <div class="card bg-white" style="min-height: 40vh;">
                             <div class="w-100 d-flex justify-content-center mt-4">
                                 <img src="{{ url('frontend/assets/img/home/uraia_project-1.jpg') }}" class="card-img-top" alt="...">
@@ -42,7 +42,7 @@
                             </div>
                         </div>
                     </div>
-                    <div class="w-100 item">
+                    <div class="w-100 item  px-2">
                         <div class="card bg-white" style="min-height: 40vh;">
                             <div class="w-100 d-flex justify-content-center mt-4">
                                 <img src="{{ url('frontend/assets/img/home/G57A6554.jpg') }}" class="card-img-top" alt="...">
@@ -57,7 +57,7 @@
                             </div>
                         </div>
                     </div>
-                    <div class="w-100 item">
+                    <div class="w-100 item  px-2">
                         <div class="card bg-white" style="min-height: 40vh;">
                             <div class="w-100 d-flex justify-content-center mt-4">
                                 <img src="{{ url('frontend/assets/img/home/Aid-Localization.jpg') }}" class="card-img-top" alt="...">

@@ -41,10 +41,13 @@
     <section>
         <div class="d-flex container">
             <div class="row">
-                <div class="col-md-6 d-flex flex-row mt-2 position-relative" data-aos="fade-up">
+                <div class="col-md-6 d-flex flex-row mt-2 position-relative" data-aos="fade-up" data-aos-once="false">
                     <div class="card bg-dinim text-white">
                         <!-- Dont use multiple card bodies, just one is enough -->
                         <div class="card-body story-card-body">
+                        {!! $Aboutus->description !!}
+                        </div>
+                        {{-- <div class="card-body story-card-body">
                             As an operating foundation, our programs and the partnerships we build work to contribute to sustainable and inclusive development in all 31 regions of Tanzania through strengthening capabilities and sharing resources. We have partnered with over 10,000 civil society, community groups, and other development actors all over the country.
                         </div>
                         <div class="card-body story-card-body">
@@ -55,12 +58,12 @@
                         </div>
                         <div class="card-body story-card-body">
                             As an operating foundation, our programs and the partnerships we build work to contribute to sustainable and inclusive development in all 31 regions of Tanzania through strengthening capabilities and sharing resources. We have partnered with over 10,000 civil society, community groups, and other development actors all over the country.
-                        </div>
+                        </div> --}}
                     </div>
                     <div class="vertical-line-4"></div>
                 </div>
 
-                <div class="col-md-6" data-aos="fade-down">
+                <div class="col-md-6" data-aos="fade-down" data-aos-once="false">
                     <img src="{{ url('frontend/images/tree.png') }}" class="tree-img" alt="Image">
                 </div>
             </div>
@@ -74,7 +77,7 @@
                 <h2>Our Story</h2>
             </div>
             <div class="row">
-                <div class="col-md-6 d-flex flex-row mt-2" data-aos="fade-right">
+                <div class="col-md-6 d-flex flex-row mt-2" data-aos="fade-right" data-aos-once="false">
                     <div class="card text-dinim">
                         <!-- Dont use multiple card bodies, just one is enough -->
                         <div class="card-body ">
@@ -94,7 +97,7 @@
                 </div>
 
             
-                <div class="col-md-6 position-relative" data-aos="fade-left">
+                <div class="col-md-6 position-relative" data-aos="fade-left" data-aos-once="false">
                     <div class="vertical-line-2"></div>
                     <div class="d-flex flex-column my-4">
                         <div class="item">
@@ -103,6 +106,7 @@
                                     <i class="bi bi-play-circle fa-3x position-absolute top-50 start-50 translate-middle text-white" style="font-size: 4rem;"></i>
                                     <img src="{{ url('frontend/assets/img/home/KAK_4853.jpg') }}" class="card-img-blog" alt="...">
                                 </div>
+
                             </div>
                         </div>
 
@@ -129,7 +133,7 @@
                 </div>
 
                 <div class="row">
-                    <div class="col-md-3 item" data-aos="fade-up-right">
+                    <div class="col-md-3 item" data-aos="fade-up-right" data-aos-once="false">
                         <div class="card bg-transparent">
                             <div class="w-100 d-flex justify-content-center mt-4">
                                 <img src="{{ url('frontend/assets/img/home/Francis-Kiwanga.png') }}" class="team-img" alt="...">
@@ -142,7 +146,7 @@
                             </div>
                         </div>
                     </div>
-                    <div class="col-md-3 item" data-aos="fade-up-left">
+                    <div class="col-md-3 item" data-aos="fade-up-left" data-aos-once="false">
                         <div class="card bg-transparent">
                             <div class="w-100 d-flex justify-content-center mt-4">
                                 <img src="{{ url('frontend/assets/img/home/Edna-160x160.jpg') }}" class="team-img" alt="...">
@@ -155,7 +159,7 @@
                             </div>
                         </div>
                     </div>
-                      <div class="col-md-3 item" data-aos="fade-down-right">
+                      <div class="col-md-3 item" data-aos="fade-down-right" data-aos-once="false">
                         <div class="card bg-transparent">
                             <div class="w-100 d-flex justify-content-center mt-4">
                                 <img src="{{ url('frontend/assets/img/home/Haule-160x160.jpg') }}" class="team-img" alt="...">
@@ -168,7 +172,7 @@
                             </div>
                         </div>
                     </div>
-                    <div class="col-md-3 item" data-aos="fade-down-left">
+                    <div class="col-md-3 item" data-aos="fade-down-left" data-aos-once="false">
                         <div class="card bg-transparent">
                             <div class="w-100 d-flex justify-content-center mt-4">
                                 <img src="{{ url('frontend/assets/img/home/Nasim-160x160.jpg') }}" class="team-img" alt="...">
@@ -194,7 +198,7 @@
                 </div>
 
                 <div class="row team-man-img">
-                    <div class="col-md-2 item" data-aos="fade-down-left">
+                    <div class="col-md-2 item" data-aos="fade-down-left" data-aos-once="false">
                         <div class="card bg-transparent">
                             <div class="w-100 d-flex justify-content-center mt-4">
                                 <img src="{{ url('frontend/assets/img/home/Karin-160x160.jpg') }}" class="team-img" alt="...">
@@ -205,7 +209,7 @@
                             </div>
                         </div>
                     </div>
-                    <div class="col-md-2 item" data-aos="flip-left">
+                    <div class="col-md-2 item" data-aos="flip-left" data-aos-once="false">
                         <div class="card bg-transparent">
                             <div class="w-100 d-flex justify-content-center mt-4">
                                 <img src="{{ url('frontend/assets/img/home/Gina-160x160.jpg') }}" class="team-img" alt="...">
@@ -216,7 +220,7 @@
                             </div>
                         </div>
                     </div>
-                      <div class="col-md-2 item" data-aos="flip-right">
+                      <div class="col-md-2 item" data-aos="flip-right" data-aos-once="false">
                         <div class="card bg-transparent">
                             <div class="w-100 d-flex justify-content-center mt-4">
                                 <img src="{{ url('frontend/assets/img/home/Yonah-Lyimo--160x160.png') }}" class="team-img" alt="...">
@@ -227,7 +231,7 @@
                             </div>
                         </div>
                     </div>
-                    <div class="col-md-2 item" data-aos="flip-up">
+                    <div class="col-md-2 item" data-aos="flip-up" data-aos-once="false">
                         <div class="card bg-transparent">
                             <div class="w-100 d-flex justify-content-center mt-4">
                                 <img src="{{ url('frontend/assets/img/home/Nemes-160x160.jpg') }}" class="team-img" alt="...">
@@ -238,7 +242,7 @@
                             </div>
                         </div>
                     </div>
-                    <div class="col-md-2 item" data-aos="flip-down">
+                    <div class="col-md-2 item" data-aos="flip-down" data-aos-once="false">
                         <div class="card bg-transparent">
                             <div class="w-100 d-flex justify-content-center mt-4">
                                 <img src="{{ url('frontend/assets/img/home/Rehema-160x160.jpg') }}" class="team-img" alt="...">
@@ -249,7 +253,7 @@
                             </div>
                         </div>
                     </div>
-                    <div class="col-md-2 item" data-aos="zoom-in">
+                    <div class="col-md-2 item" data-aos="zoom-in" data-aos-once="false">
                         <div class="card bg-transparent">
                             <div class="w-100 d-flex justify-content-center mt-4">
                                 <img src="{{ url('frontend/assets/img/home/Tusekile-160x160.jpg') }}" class="team-img" alt="...">
@@ -260,7 +264,7 @@
                             </div>
                         </div>
                     </div>
-                    <div class="col-md-2 item" data-aos="zoom-in-up">
+                    <div class="col-md-2 item" data-aos="zoom-in-up" data-aos-once="false">
                         <div class="card bg-transparent">
                             <div class="w-100 d-flex justify-content-center mt-4">
                                 <img src="{{ url('frontend/assets/img/home/Bertha-160x160.jpg') }}" class="team-img" alt="...">
@@ -271,7 +275,7 @@
                             </div>
                         </div>
                     </div>
-                    <div class="col-md-2 item" data-aos="zoom-in-down">
+                    <div class="col-md-2 item" data-aos="zoom-in-down" data-aos-once="false">
                         <div class="card bg-transparent">
                             <div class="w-100 d-flex justify-content-center mt-4">
                                 <img src="{{ url('frontend/assets/img/home/Ngala-160x160.jpg') }}" class="team-img" alt="...">
@@ -283,7 +287,7 @@
                             </div>
                         </div>
                     </div>
-                    <div class="col-md-2 item" data-aos="zoom-in-left">
+                    <div class="col-md-2 item" data-aos="zoom-in-left" data-aos-once="false">
                         <div class="card bg-transparent">
                             <div class="w-100 d-flex justify-content-center mt-4">
                                 <img src="{{ url('frontend/assets/img/home/Bart-Web-160x160.jpg') }}" class="team-img" alt="...">
@@ -293,8 +297,8 @@
                                 <h5 class="card-title">Bartholomew Mbiling’i</h5>                                
                             </div>
                         </div>
-                    </div>
-                    <div class="col-md-2 item" data-aos="zoom-in-right">
+                    </div> 
+                    <div class="col-md-2 item" data-aos="zoom-in-right" data-aos-once="false">
                         <div class="card bg-transparent">
                             <div class="w-100 d-flex justify-content-center mt-4">
                                 <img src="{{ url('frontend/assets/img/home/Shamsia-160x160.jpg') }}" class="team-img" alt="...">
@@ -305,7 +309,7 @@
                             </div>
                         </div>
                     </div>
-                    <div class="col-md-2 item" data-aos="zoom-out-up">
+                    <div class="col-md-2 item" data-aos="zoom-out-up" data-aos-once="false">
                         <div class="card bg-transparent">
                             <div class="w-100 d-flex justify-content-center mt-4">
                                 <img src="{{ url('frontend/assets/img/home/Maria-160x160.jpg') }}" class="team-img" alt="...">
@@ -316,7 +320,7 @@
                             </div>
                         </div>
                     </div>
-                    <div class="col-md-2 item" data-aos="zoom-out">
+                    <div class="col-md-2 item" data-aos="zoom-out" data-aos-once="false">
                         <div class="card bg-transparent">
                             <div class="w-100 d-flex justify-content-center mt-4">
                                 <img src="{{ url('frontend/assets/img/home/Basil-160x160.jpg') }}" class="team-img" alt="...">
@@ -342,11 +346,11 @@
                 </div>
 
                 <div class="inlude-text text-center">
-                    <p>Gender Equility and Inclusion, Humidyi  and companrison  of the compaisione when it comes down to the fll of uhrri it can irjkjsd inldju kkjdkjnfd ndndk kdkjfnf mkdjkfjdn ni thl kelkjkr fkdjfj ikjk kkjkj </p>
+                    <p>Gender Equility and Inclusion, Humidyi  and companrison  of the compaisione when it comes down to the fll of uhrri it can compaisione when it comes down to the fll of uhrri it can compaisione when it comes down to the fll of uhrri it can  </p>
                 </div>
 
                 <div class="row">
-                    <div class="col-md-2 item" data-aos="zoom-out-down">
+                    <div class="col-md-2 item" data-aos="zoom-out-down" data-aos-once="false">
                         <div class="card bg-transparent">
                             <div class="w-100 d-flex justify-content-start mt-4">
                                 <img src="{{ url('frontend/images/gender.png') }}" class="team-img" alt="...">
@@ -357,7 +361,7 @@
                             </div>
                         </div>
                     </div>
-                    <div class="col-md-2 item" data-aos="zoom-out-right">
+                    <div class="col-md-2 item" data-aos="zoom-out-right" data-aos-once="false">
                         <div class="card bg-transparent">
                             <div class="w-100 d-flex justify-content-center mt-4">
                                 <img src="{{ url('frontend/images/hands.png') }}" class="team-img" alt="...">
@@ -368,7 +372,7 @@
                             </div>
                         </div>
                     </div>
-                      <div class="col-md-2 item" data-aos="zoom-out-left">
+                      <div class="col-md-2 item" data-aos="zoom-out-left" data-aos-once="false">
                         <div class="card bg-transparent">
                             <div class="w-100 d-flex justify-content-center mt-4">
                                 <img src="{{ url('frontend/images/face.png') }}" class="team-img" alt="...">
@@ -380,7 +384,7 @@
                         </div>
                     </div>
                     <div class="col-md-2 item" data-aos="fade-up"
-                                                data-aos-duration="3000">
+                                                data-aos-duration="3000" data-aos-once="false">
                         <div class="card bg-transparent">
                             <div class="w-100 d-flex justify-content-center mt-4">
                                 <img src="{{ url('frontend/images/inclusion.png') }}" class="team-img" alt="...">
@@ -394,7 +398,7 @@
 
                     <div class="col-md-2 item" data-aos="fade-down"
                                                 data-aos-easing="linear"
-                                                data-aos-duration="1500">
+                                                data-aos-duration="1500" data-aos-once="false">
                         <div class="card bg-transparent">
                             <div class="w-100 d-flex justify-content-center mt-4">
                                 <img src="{{ url('frontend/images/intergrity.png') }}" class="team-img" alt="...">
@@ -408,7 +412,7 @@
 
                     <div class="col-md-2 item"  data-aos="fade-right"
                                                 data-aos-offset="300"
-                                                data-aos-easing="ease-in-sine">
+                                                data-aos-easing="ease-in-sine" data-aos-once="false">
                         <div class="card bg-transparent">
                             <div class="w-100 d-flex justify-content-center mt-4">
                                 <img src="{{ url('frontend/images/learning.png') }}" class="team-img" alt="...">
@@ -430,7 +434,7 @@
             <div class="row">
                 <div class="col-md-6 d-flex flex-row mt-2" data-aos="fade-down"
                                                             data-aos-easing="linear"
-                                                            data-aos-duration="1500">
+                                                            data-aos-duration="1500" data-aos-once="false">
                     <div class="card w-100">
                         <div class="card-body w-100 d-flex justify-content-end align-items-center ">
                             <h3 style="font-weight: normal;"> Abrief History of <br>
@@ -443,7 +447,7 @@
 
                 <div class="col-md-6"  data-aos="fade-right"
                                         data-aos-offset="300"
-                                        data-aos-easing="ease-in-sine">
+                                        data-aos-easing="ease-in-sine" data-aos-once="false">
                     <div class="d-flex flex-column my-4">
                         <div class="item">
                             <div class="card bg-white">

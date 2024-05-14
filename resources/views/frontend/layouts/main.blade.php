@@ -46,21 +46,21 @@
                       <div class="carousel-item active" data-bs-interval="10000">
                           <img src="{{ url('frontend/images/tree.png') }}" class="d-block w-100" alt="...">
                           <div class="carousel-caption d-none d-md-block">
-                              <h5>First slide label</h5>
+                              <h5>Facilitate</h5>
                               <p>Some representative placeholder content for the first slide.</p>
                           </div>
                       </div>
                       <div class="carousel-item" data-bs-interval="2000">
                           <img src="{{ url('frontend/images/tree.png') }}" class="d-block w-100" alt="...">
                           <div class="carousel-caption d-none d-md-block">
-                              <h5>Second slide label</h5>
+                              <h5>Capacitate</h5>
                               <p>Some representative placeholder content for the second slide.</p>
                           </div>
                       </div>
                       <div class="carousel-item">
                           <img src="{{ url('frontend/images/tree.png') }}" class="d-block w-100" alt="...">
                           <div class="carousel-caption d-none d-md-block">
-                              <h5>Third slide label</h5>
+                              <h5>Accelerate</h5>
                               <p>Some representative placeholder content for the third slide.</p>
                           </div>
                       </div>
@@ -72,7 +72,7 @@
           <div class="col-md-6 d-flex flex-row top-header">
               <ul>
                   <li class="right text-nowrap fw-bold text-dinim"> 
-                      <button id="facilitateButton" type="button" class="btn  bg-white text-dinim fw-bold" data-bs-toggle="modal" data-bs-target="#facilitateModal">
+                      <button id="facilitateButton" type="button" class="btn  bg-white text-dinim fw-bold button-animation" data-bs-toggle="modal" data-bs-target="#facilitateModal">
                           Facilitate
                       </button>
                       <div class="modal fade" id="facilitateModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
@@ -97,7 +97,7 @@
                       </div>
                   </li>
                   <li class="middle text-nowrap fw-bold text-dinim">
-                      <button id="capacitateButton" type="button" class="btn  bg-white text-dinim fw-bold" data-bs-toggle="modal" data-bs-target="#CapacitateModal">
+                      <button id="capacitateButton" type="button" class="btn  bg-white text-dinim fw-bold button-animation" data-bs-toggle="modal" data-bs-target="#CapacitateModal">
                           Capacitate
                       </button>
                       <div class="modal fade" id="CapacitateModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
@@ -120,7 +120,7 @@
                       </div>
                   </li>
                   <li class="buttom text-nowrap fw-bold text-dinim">
-                      <button id="accelerateButton" type="button" class="btn  bg-white text-dinim fw-bold" data-bs-toggle="modal" data-bs-target="#AccelerateModal">
+                      <button id="accelerateButton" type="button" class="btn  bg-white text-dinim fw-bold button-animation" data-bs-toggle="modal" data-bs-target="#AccelerateModal">
                           Accelerate
                       </button>
                       <div class="modal fade" id="AccelerateModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
@@ -181,12 +181,12 @@
     <div class="menu-toggle p-absolute">
         <div class="menu-toggle-icon">
             <!-- Your icon or text here -->
-            <span style="font-size:30px;cursor:pointer; color: #398abd" id="menu-icon" onclick="openNav()">&#9776; Menu</span>
+            <span style="font-size:30px;cursor:pointer; color: #398abd" id="menu-icon" onmouseover="openNav()" onclick="openNav()">&#9776; Menu</span>
         </div>
         
         <div id="mySidenav" class="sidenav mx-2">
             <!-- Your menu content here -->
-            <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+            <a href="javascript:void(0)" class="closebtn" onmouseover="closeNav()" onclick="closeNav()">&times;</a>
             <a href="{{ url('/') }}" class="text-dinim">Home</a>
             <a href="{{ url('about-us') }}" class="text-dinim">About Us</a>
             {{-- <a href="{{ url('our-governance') }}" class="text-dinim">Our governance</a> --}}

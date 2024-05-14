@@ -5,8 +5,8 @@
             <div class="who-are-we">
                 <!-- About section -->
                 <div id="who-we-are">
-                    <div class="row g-5 h-100" data-aos="flip-left">
-                        <div class="col-lg-6 d-flex align-items-start flex-column justify-content-start text-dinim" data-aos="fade-right">
+                    <div class="row g-5 h-100" data-aos="flip-left" data-aos-once="false">
+                        <div class="col-lg-6 d-flex align-items-start flex-column justify-content-start text-dinim" data-aos="fade-right" data-aos-once="false">
                             <div class="d-flex flex-column align-items-end">
                                 <div class="d-flex  align-items-center justify-content-center w-75">
                                     <div class="text-dinim text-center about-title">
@@ -14,7 +14,7 @@
                                     </div>
                                 </div>
                                 <div class="card-body py-5 d-flex flex-column justify-content-center bg-dinim text-white text-center mb-4" style="border-radius: 2rem; width: 65%;">
-                                    <p class="experience-title" data-aos="flip-left">
+                                    <p class="experience-title" data-aos="flip-left" data-aos-once="false">
                                         ESTABLISHED<br>
                                         OVER<br>
                                         <strong class="text-yellow-sunshine">2 DECADES</strong><br>
@@ -40,7 +40,7 @@
                             </div>
                         </div>
                         
-                        <div class="col-lg-6 pt-4 d-flex  align-items-center pt-lg-0" data-aos="fade-left">
+                        <div class="col-lg-6 pt-4 d-flex  align-items-center pt-lg-0" data-aos="fade-left" data-aos-once="false">
                             <div class="d-flex flex-column story-left w-75">
                                 <p class="independent-title mt-2 text-dinim">
                                     Established over 2 decades ago, FCS is the largest local

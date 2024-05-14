@@ -10,8 +10,8 @@
                     data-aos-easing="ease-out-cubic"
                     data-aos-duration="2000"> --}}
                 <div id="who-we-are"  data-aos="flip-left"
-                                    data-aos-easing="ease-out-cubic"
-                                    data-aos-duration="2000">
+                                      data-aos-easing="ease-out-cubic"
+                                       data-aos-duration="2000" data-aos-once="false">
                     <div class="row h-100">
                         <div class="col-lg-6 d-flex align-items-start justify-content-start text-dinim">
                             <div class="d-flex flex-column">
@@ -25,7 +25,7 @@
                             </div>
                         </div>
                         
-                        <div class="col-lg-6 pt-4 d-flex align-items-end justify-content-center pt-lg-0" data-aos="zoom-in-down">
+                        <div class="col-lg-6 pt-4 d-flex align-items-end justify-content-center pt-lg-0" data-aos="zoom-in-down" data-aos-once="false">
                             <div class="vertical-line"></div>
                             <img src="/images/aboutUs/{{ $Aboutus->image }}" class="img-fluid-who" alt="">
                         </div>

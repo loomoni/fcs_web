@@ -34,7 +34,7 @@
                 <div class="row">
                     <div class="col-md-7 item" data-aos="fade-down"
                                                 data-aos-easing="linear"
-                                                data-aos-duration="1500">
+                                                data-aos-duration="1500" data-aos-once="false">
                         <div class="card card-updates bg-white">
                             <div class="card-body text-center mb-4">
                                 <div class="row">
@@ -55,7 +55,7 @@
                     </div>
                     <div class="col-md-5 item" data-aos="fade-right"
                                                 data-aos-offset="300"
-                                                data-aos-easing="ease-in-sine">
+                                                data-aos-easing="ease-in-sine" data-aos-once="false">
                         <div class="card card-updates bg-white">
                             <div class="card-body text-center mb-4">
                                 <div class="row">

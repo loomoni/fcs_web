@@ -124,10 +124,10 @@
                     <h2>Podcast</h2>
                 </div>
 
-                <div class="row">
-                    <div class="col-md-6 item" ata-aos="fade-down-right">
+                <div class="row"  style="padding: 10px;">
+                    <div class="col-md-6 item" data-aos="fade-down-right">
                         <div class="card bg-white">
-                            <div class="card-body mb-4">
+                            <div class="card-body mb-4 postcast-item">
                                 <h5 class="card-title">FCSAND CSOSJOIN HANDSTO SUPPORTOVER220CHILDREN</h5>
                                 <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
                                 <div class="audio">
@@ -139,9 +139,9 @@
                             </div>
                         </div>
                     </div>
-                    <div class="col-md-6 item" ata-aos="fade-down-left">
+                    <div class="col-md-6 item" data-aos="fade-down-left">
                         <div class="card bg-white">
-                            <div class="card-body mb-4">
+                            <div class="card-body mb-4 postcast-item">
                                 <h5 class="card-title">FCSAND CSOSJOIN HANDSTO SUPPORTOVER220CHILDREN</h5>
                                 <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
                                 <div class="audio">
@@ -156,10 +156,10 @@
     
                 </div>
 
-                <div class="row">
-                    <div class="col-md-6 item" ata-aos="fade-down-right">
+                <div class="row" style="padding: 10px;">
+                    <div class="col-md-6 item" data-aos="fade-down-right">
                         <div class="card bg-white">
-                            <div class="card-body mb-4">
+                            <div class="card-body mb-4 postcast-item">
                                 <h5 class="card-title">FCSAND CSOSJOIN HANDSTO SUPPORTOVER220CHILDREN</h5>
                                 <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
                                 <div class="audio">
@@ -171,9 +171,10 @@
                             </div>
                         </div>
                     </div>
-                    <div class="col-md-6 item" ata-aos="fade-down-left">
+
+                    <div class="col-md-6 item" data-aos="fade-down-left">
                         <div class="card bg-white">
-                            <div class="card-body mb-4">
+                            <div class="card-body mb-4 postcast-item">
                                 <h5 class="card-title">FCSAND CSOSJOIN HANDSTO SUPPORTOVER220CHILDREN</h5>
                                 <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
                                 <div class="audio">

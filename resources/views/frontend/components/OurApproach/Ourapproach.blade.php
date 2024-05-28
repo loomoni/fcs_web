@@ -55,16 +55,12 @@
                                 <img src="{{ ('frontend/images/house.png') }}" class="team-img-result" alt="...">
                             </div>
                             <div class="card-body  text-center">
-                                <p class="card-title">The thematic area of peace and conflict
+                                <p class="card-title">
+                                    The thematic area of peace and conflict
                                     management was introducedin the
                                     previous strategy to contributet o
                                     peacefulc oexistenc einthethem atic
-                                    outco mear eaofgove rnance.Wehave
-                                    howeverre alizedoverthelast5
-                                    yearst hatthereist heneedforadditional
-                                    focusa ndresou rces tothisa reathatisa
-                                    prerequi site tothesustainable
-                                    achiev ementofthemi ssionofFCS.</p>    
+                                    outco mear.</p>    
                             </div>
                             <a class="read-more text-center text-dark float-right w-50 mt-2" data-mdb-ripple-color="dark">
                                 More
@@ -85,12 +81,7 @@
                                     management was introducedin the
                                     previous strategy to contributet o
                                     peacefulc oexistenc einthethem atic
-                                    outco mear eaofgove rnance.Wehave
-                                    howeverre alizedoverthelast5
-                                    yearst hatthereist heneedforadditional
-                                    focusa ndresou rces tothisa reathatisa
-                                    prerequi site tothesustainable
-                                    achiev ementofthemi ssionofFCS.</p>    
+                                    outco mear.</p>    
                             </div>
                             <a class="read-more text-center text-dark float-right w-50 mt-2" data-mdb-ripple-color="dark">
                                 More
@@ -101,7 +92,7 @@
                     <div class="col-md-3 item" data-aos="fade-right" data-aos-once="false">
                         <div class="card bg-transparent text-center d-flex align-items-center">
                             <div class="text-center">
-                                <h5 class="card-title"><strong>Gender Equality and Financial Inclusion</strong></h5>                                
+                                <h5 class="card-title"><strong>Gender Equality and Financial</strong></h5>                                
                             </div>
                             <div class="w-100 d-flex justify-content-center mt-4">
                                 <img src="{{ ('frontend/images/inclusion.png') }}" class="team-img-result" alt="...">
@@ -111,12 +102,7 @@
                                     management was introducedin the
                                     previous strategy to contributet o
                                     peacefulc oexistenc einthethem atic
-                                    outco mear eaofgove rnance.Wehave
-                                    howeverre alizedoverthelast5
-                                    yearst hatthereist heneedforadditional
-                                    focusa ndresou rces tothisa reathatisa
-                                    prerequi site tothesustainable
-                                    achiev ementofthemi ssionofFCS.</p>    
+                                    outco mear.</p>    
                             </div>
                             <a class="read-more text-center text-dark float-right w-50 mt-2" data-mdb-ripple-color="dark">
                                 More
@@ -137,12 +123,7 @@
                                     management was introducedin the
                                     previous strategy to contributet o
                                     peacefulc oexistenc einthethem atic
-                                    outco mear eaofgove rnance.Wehave
-                                    howeverre alizedoverthelast5
-                                    yearst hatthereist heneedforadditional
-                                    focusa ndresou rces tothisa reathatisa
-                                    prerequi site tothesustainable
-                                    achiev ementofthemi ssionofFCS.</p>    
+                                    outco mear.</p>    
                             </div>
                             <a class="read-more text-center text-dark float-right w-50 mt-2" data-mdb-ripple-color="dark">
                                 More
@@ -174,7 +155,7 @@
                             <div class="w-100 d-flex flex-column align-items-center justify-content-center mt-4">
                                 <div class="hexagon-part">
                                     <div class='hexagon-shape'>
-                                        <img src="{{ url('frontend/images/fcs/ELEMENTS/REGENERATIVE.png') }}" class="pent-img" ="">
+                                        <img src="{{ url('frontend/images/fcs/ELEMENTS/REGENERATIVE.png') }}" class="pent-img">
                                     </div>
                                 </div>
                                 <div class="line-after">
@@ -218,7 +199,7 @@
             <div class="foundation-news-content">
                 <div class="row">
                     <div class="col-md-6 d-flex align-items-center justify-content-center" data-aos="fade-right" data-aos-once="false">
-                        <div class="d-flex flex-column text-end">
+                        <div class="d-flex flex-column text-start">
                             <p class="independent-title">
                                 Foundation for Civil Society(fCS) is a citizen-centered
                                 institution that facilitates, capacitates anda ccelerates
@@ -315,7 +296,7 @@
             <div class="foundation-news-content">
                 <div class="row">
                     <div class="col-md-6 d-flex align-items-center justify-content-center" data-aos="fade-right" data-aos-once="false">
-                        <div class="d-flex flex-column text-end">
+                        <div class="d-flex flex-column text-start">
                             <p class="independent-title">
                                 Foundation for Civil Society(fCS) is a citizen-centered
                                 institution that facilitates, capacitates anda ccelerates
@@ -410,7 +391,7 @@
             <div class="foundation-news-content">
                 <div class="row">
                     <div class="col-md-6 d-flex align-items-center justify-content-center" data-aos="fade-right" data-aos-once="false">
-                        <div class="d-flex flex-column text-end">
+                        <div class="d-flex flex-column text-start">
                             <p class="independent-title">
                                 Foundation for Civil Society(fCS) is a citizen-centered
                                 institution that facilitates, capacitates anda ccelerates

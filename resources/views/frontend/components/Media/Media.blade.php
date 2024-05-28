@@ -274,11 +274,9 @@
 
 
     <section class="bg-white"> 
-        <div class="d-flex container flex-column " data-aos="zoom-in-up" data-aos-once="false"> 
-            <div class="section-title text-center mb-4">
-                <h2>Financial Reports</h2>
-            </div>
-            <div class="row">
+        {{-- <div class="d-flex container flex-column " data-aos="zoom-in-up" data-aos-once="false">  --}}
+           
+            {{-- <div class="row">
                 <div class="col-md-8 offset-2">
                     <div class="d-flex flex-column my-4">
                         <div class="item">
@@ -345,8 +343,493 @@
                         </div>
                     </div>
                 </div>
+            </div> --}}
+        {{-- </div> --}}
+
+        <style>
+            .nav-tabs .nav-link {
+                color: grey;
+            }
+            .nav-tabs .nav-link.active {
+                background-color: #006892;
+                color: white;
+            }
+            .tab-content .list-group-item {
+                display: flex;
+                align-items: center;
+                justify-content: space-between;
+            }
+            .tab-content .list-group-item img {
+                margin-right: 10px;
+            }
+            .tab-content .download-btn {
+                background-color: #007bff;
+                color: white;
+                border: none;
+                padding: 5px 10px;
+                border-radius: 5px;
+            }
+        </style>
+
+
+        <div class="container notebook mt-5" data-aos="zoom-in-up" data-aos-once="false">
+            <div class="section-title text-center mb-4">
+                <h2>FCS Reports</h2>
             </div>
-        </div>
+            <!-- Nav tabs -->
+            <ul class="nav nav-tabs" id="myTab" role="tablist">
+              <li class="nav-item">
+                <a
+                  class="nav-link active"
+                  id="newsletter-tab"
+                  data-toggle="tab"
+                  href="#newsletter"
+                  role="tab"
+                  aria-controls="newsletter"
+                  aria-selected="true"
+                  {{-- style="color: #006892" --}}
+                  >Newsletter</a
+                >
+              </li>
+              <li class="nav-item">
+                <a
+                  class="nav-link"
+                  id="annual-reports-tab"
+                  data-toggle="tab"
+                  href="#annual-reports"
+                  role="tab"
+                  aria-controls="annual-reports"
+                  aria-selected="false"
+                  >Annual Reports</a
+                >
+              </li>
+              <li class="nav-item">
+                <a
+                  class="nav-link"
+                  id="fcs-leaflets-tab"
+                  data-toggle="tab"
+                  href="#fcs-leaflets"
+                  role="tab"
+                  aria-controls="fcs-leaflets"
+                  aria-selected="false"
+                  >FCS Leaflets</a
+                >
+              </li>
+              <li class="nav-item">
+                <a
+                  class="nav-link"
+                  id="financial-reports-tab"
+                  data-toggle="tab"
+                  href="#financial-reports"
+                  role="tab"
+                  aria-controls="financial-reports"
+                  aria-selected="false"
+                  >Financial Reports</a
+                >
+              </li>
+              <li class="nav-item">
+                <a
+                  class="nav-link"
+                  id="other-reports-tab"
+                  data-toggle="tab"
+                  href="#other-reports"
+                  role="tab"
+                  aria-controls="other-reports"
+                  aria-selected="false"
+                  >Other Reports</a
+                >
+              </li>
+            </ul>
+      
+            <!-- Tab panes -->
+            <div class="tab-content">
+              <div
+                class="tab-pane fade show active"
+                id="newsletter"
+                role="tabpanel"
+                aria-labelledby="newsletter-tab"
+              >
+                <ul class="list-group mt-3">
+                    <div class="row">
+                        <div class="col-md-8 offset-2">
+                            <div class="d-flex flex-column my-4">
+                                <div class="item">
+                                    <div class="card bg-white border-card financial-card">
+                                        <div class="card-body w-100 d-flex justify-content-end align-items-center ">
+                                            <div class="d-flex flex-column w-100 p-2">
+                                                <div class="d-flex justify-content-between bg-white p-2 left-box">
+                                                    <div class="text-dark">
+                                                        <img src="{{ ('frontend/images/pdf.png') }}" class="pdf-image" alt="">
+                                                        <span>CISNCO 123 WEEK 20239 </span>
+                                                    </div>
+                                                    <div class="text-white">
+                                                        <a href="" class="btn btn-primary bg-dinim text-white text-decoration-underline"> Download</a>
+                                                    </div>
+                                                </div>
+                                                <div class="d-flex justify-content-between bg-dinim-2 p-2 left-box mt-2">
+                                                    <div class="text-dark">
+                                                        <img src="{{ ('frontend/images/pdf.png') }}" class="pdf-image" alt="">
+                                                        <span>CISNCO 123 WEEK 20239 </span>
+                                                    </div>
+                                                    <div class="text-dark">
+                                                        <a href="" class="btn btn-primary bg-dinim text-white text-decoration-underline"> Download</a>
+                                                    </div>
+                                                </div>
+                                                <div class="d-flex justify-content-between bg-white p-2 left-box">
+                                                    <div class="text-dark">
+                                                        <img src="{{ ('frontend/images/pdf.png') }}" class="pdf-image" alt="">
+                                                        <span>CISNCO 123 WEEK 20239 </span>
+                                                    </div>
+                                                    <div class="text-white">
+                                                        <a href="" class="btn btn-primary bg-dinim text-white text-decoration-underline"> Download</a>
+                                                    </div>
+                                                </div>
+                                                <div class="d-flex justify-content-between bg-dinim-2 p-2 left-box mt-2">
+                                                    <div class="text-dark">
+                                                        <img src="{{ ('frontend/images/pdf.png') }}" class="pdf-image" alt="">
+                                                        <span>CISNCO 123 WEEK 20239 </span>
+                                                    </div>
+                                                    <div class="text-dark">
+                                                        <a href="" class="btn btn-primary bg-dinim text-white text-decoration-underline"> Download</a>
+                                                    </div>
+                                                </div>
+                                                <div class="d-flex justify-content-between bg-white p-2 left-box">
+                                                    <div class="text-dark">
+                                                        <img src="{{ ('frontend/images/pdf.png') }}" class="pdf-image" alt="">
+                                                        <span>CISNCO 123 WEEK 20239 </span>
+                                                    </div>
+                                                    <div class="text-white">
+                                                        <a href="" class="btn btn-primary bg-dinim text-white text-decoration-underline"> Download</a>
+                                                    </div>
+                                                </div>
+                                                <div class="d-flex justify-content-between bg-dinim-2 p-2 left-box mt-2">
+                                                    <div class="text-dark">
+                                                        <img src="{{ ('frontend/images/pdf.png') }}" class="pdf-image" alt="">
+                                                        <span>CISNCO 123 WEEK 20239 </span>
+                                                    </div>
+                                                    <div class="text-dark">
+                                                        <a href="" class="btn btn-primary bg-dinim text-white text-decoration-underline"> Download</a>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </ul>
+              </div>
+              <div
+                class="tab-pane fade"
+                id="annual-reports"
+                role="tabpanel"
+                aria-labelledby="annual-reports-tab"
+              >
+                <ul class="list-group mt-3">
+                    <div class="row">
+                        <div class="col-md-8 offset-2">
+                            <div class="d-flex flex-column my-4">
+                                <div class="item">
+                                    <div class="card bg-white border-card financial-card">
+                                        <div class="card-body w-100 d-flex justify-content-end align-items-center ">
+                                            <div class="d-flex flex-column w-100 p-2">
+                                                <div class="d-flex justify-content-between bg-white p-2 left-box">
+                                                    <div class="text-dark">
+                                                        <img src="{{ ('frontend/images/pdf.png') }}" class="pdf-image" alt="">
+                                                        <span>CISNCO 123 WEEK 20239 </span>
+                                                    </div>
+                                                    <div class="text-white">
+                                                        <a href="" class="btn btn-primary bg-dinim text-white text-decoration-underline"> Download</a>
+                                                    </div>
+                                                </div>
+                                                <div class="d-flex justify-content-between bg-dinim-2 p-2 left-box mt-2">
+                                                    <div class="text-dark">
+                                                        <img src="{{ ('frontend/images/pdf.png') }}" class="pdf-image" alt="">
+                                                        <span>CISNCO 123 WEEK 20239 </span>
+                                                    </div>
+                                                    <div class="text-dark">
+                                                        <a href="" class="btn btn-primary bg-dinim text-white text-decoration-underline"> Download</a>
+                                                    </div>
+                                                </div>
+                                                <div class="d-flex justify-content-between bg-white p-2 left-box">
+                                                    <div class="text-dark">
+                                                        <img src="{{ ('frontend/images/pdf.png') }}" class="pdf-image" alt="">
+                                                        <span>CISNCO 123 WEEK 20239 </span>
+                                                    </div>
+                                                    <div class="text-white">
+                                                        <a href="" class="btn btn-primary bg-dinim text-white text-decoration-underline"> Download</a>
+                                                    </div>
+                                                </div>
+                                                <div class="d-flex justify-content-between bg-dinim-2 p-2 left-box mt-2">
+                                                    <div class="text-dark">
+                                                        <img src="{{ ('frontend/images/pdf.png') }}" class="pdf-image" alt="">
+                                                        <span>CISNCO 123 WEEK 20239 </span>
+                                                    </div>
+                                                    <div class="text-dark">
+                                                        <a href="" class="btn btn-primary bg-dinim text-white text-decoration-underline"> Download</a>
+                                                    </div>
+                                                </div>
+                                                <div class="d-flex justify-content-between bg-white p-2 left-box">
+                                                    <div class="text-dark">
+                                                        <img src="{{ ('frontend/images/pdf.png') }}" class="pdf-image" alt="">
+                                                        <span>CISNCO 123 WEEK 20239 </span>
+                                                    </div>
+                                                    <div class="text-white">
+                                                        <a href="" class="btn btn-primary bg-dinim text-white text-decoration-underline"> Download</a>
+                                                    </div>
+                                                </div>
+                                                <div class="d-flex justify-content-between bg-dinim-2 p-2 left-box mt-2">
+                                                    <div class="text-dark">
+                                                        <img src="{{ ('frontend/images/pdf.png') }}" class="pdf-image" alt="">
+                                                        <span>CISNCO 123 WEEK 20239 </span>
+                                                    </div>
+                                                    <div class="text-dark">
+                                                        <a href="" class="btn btn-primary bg-dinim text-white text-decoration-underline"> Download</a>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </ul>
+              </div>
+              <div
+                class="tab-pane fade"
+                id="fcs-leaflets"
+                role="tabpanel"
+                aria-labelledby="fcs-leaflets-tab"
+              >
+                <ul class="list-group mt-3">
+                    <div class="row">
+                        <div class="col-md-8 offset-2">
+                            <div class="d-flex flex-column my-4">
+                                <div class="item">
+                                    <div class="card bg-white border-card financial-card">
+                                        <div class="card-body w-100 d-flex justify-content-end align-items-center ">
+                                            <div class="d-flex flex-column w-100 p-2">
+                                                <div class="d-flex justify-content-between bg-white p-2 left-box">
+                                                    <div class="text-dark">
+                                                        <img src="{{ ('frontend/images/pdf.png') }}" class="pdf-image" alt="">
+                                                        <span>CISNCO 123 WEEK 20239 </span>
+                                                    </div>
+                                                    <div class="text-white">
+                                                        <a href="" class="btn btn-primary bg-dinim text-white text-decoration-underline"> Download</a>
+                                                    </div>
+                                                </div>
+                                                <div class="d-flex justify-content-between bg-dinim-2 p-2 left-box mt-2">
+                                                    <div class="text-dark">
+                                                        <img src="{{ ('frontend/images/pdf.png') }}" class="pdf-image" alt="">
+                                                        <span>CISNCO 123 WEEK 20239 </span>
+                                                    </div>
+                                                    <div class="text-dark">
+                                                        <a href="" class="btn btn-primary bg-dinim text-white text-decoration-underline"> Download</a>
+                                                    </div>
+                                                </div>
+                                                <div class="d-flex justify-content-between bg-white p-2 left-box">
+                                                    <div class="text-dark">
+                                                        <img src="{{ ('frontend/images/pdf.png') }}" class="pdf-image" alt="">
+                                                        <span>CISNCO 123 WEEK 20239 </span>
+                                                    </div>
+                                                    <div class="text-white">
+                                                        <a href="" class="btn btn-primary bg-dinim text-white text-decoration-underline"> Download</a>
+                                                    </div>
+                                                </div>
+                                                <div class="d-flex justify-content-between bg-dinim-2 p-2 left-box mt-2">
+                                                    <div class="text-dark">
+                                                        <img src="{{ ('frontend/images/pdf.png') }}" class="pdf-image" alt="">
+                                                        <span>CISNCO 123 WEEK 20239 </span>
+                                                    </div>
+                                                    <div class="text-dark">
+                                                        <a href="" class="btn btn-primary bg-dinim text-white text-decoration-underline"> Download</a>
+                                                    </div>
+                                                </div>
+                                                <div class="d-flex justify-content-between bg-white p-2 left-box">
+                                                    <div class="text-dark">
+                                                        <img src="{{ ('frontend/images/pdf.png') }}" class="pdf-image" alt="">
+                                                        <span>CISNCO 123 WEEK 20239 </span>
+                                                    </div>
+                                                    <div class="text-white">
+                                                        <a href="" class="btn btn-primary bg-dinim text-white text-decoration-underline"> Download</a>
+                                                    </div>
+                                                </div>
+                                                <div class="d-flex justify-content-between bg-dinim-2 p-2 left-box mt-2">
+                                                    <div class="text-dark">
+                                                        <img src="{{ ('frontend/images/pdf.png') }}" class="pdf-image" alt="">
+                                                        <span>CISNCO 123 WEEK 20239 </span>
+                                                    </div>
+                                                    <div class="text-dark">
+                                                        <a href="" class="btn btn-primary bg-dinim text-white text-decoration-underline"> Download</a>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </ul>
+              </div>
+              <div
+                class="tab-pane fade"
+                id="financial-reports"
+                role="tabpanel"
+                aria-labelledby="financial-reports-tab"
+              >
+                <ul class="list-group mt-3">
+                    <div class="row">
+                        <div class="col-md-8 offset-2">
+                            <div class="d-flex flex-column my-4">
+                                <div class="item">
+                                    <div class="card bg-white border-card financial-card">
+                                        <div class="card-body w-100 d-flex justify-content-end align-items-center ">
+                                            <div class="d-flex flex-column w-100 p-2">
+                                                <div class="d-flex justify-content-between bg-white p-2 left-box">
+                                                    <div class="text-dark">
+                                                        <img src="{{ ('frontend/images/pdf.png') }}" class="pdf-image" alt="">
+                                                        <span>CISNCO 123 WEEK 20239 </span>
+                                                    </div>
+                                                    <div class="text-white">
+                                                        <a href="" class="btn btn-primary bg-dinim text-white text-decoration-underline"> Download</a>
+                                                    </div>
+                                                </div>
+                                                <div class="d-flex justify-content-between bg-dinim-2 p-2 left-box mt-2">
+                                                    <div class="text-dark">
+                                                        <img src="{{ ('frontend/images/pdf.png') }}" class="pdf-image" alt="">
+                                                        <span>CISNCO 123 WEEK 20239 </span>
+                                                    </div>
+                                                    <div class="text-dark">
+                                                        <a href="" class="btn btn-primary bg-dinim text-white text-decoration-underline"> Download</a>
+                                                    </div>
+                                                </div>
+                                                <div class="d-flex justify-content-between bg-white p-2 left-box">
+                                                    <div class="text-dark">
+                                                        <img src="{{ ('frontend/images/pdf.png') }}" class="pdf-image" alt="">
+                                                        <span>CISNCO 123 WEEK 20239 </span>
+                                                    </div>
+                                                    <div class="text-white">
+                                                        <a href="" class="btn btn-primary bg-dinim text-white text-decoration-underline"> Download</a>
+                                                    </div>
+                                                </div>
+                                                <div class="d-flex justify-content-between bg-dinim-2 p-2 left-box mt-2">
+                                                    <div class="text-dark">
+                                                        <img src="{{ ('frontend/images/pdf.png') }}" class="pdf-image" alt="">
+                                                        <span>CISNCO 123 WEEK 20239 </span>
+                                                    </div>
+                                                    <div class="text-dark">
+                                                        <a href="" class="btn btn-primary bg-dinim text-white text-decoration-underline"> Download</a>
+                                                    </div>
+                                                </div>
+                                                <div class="d-flex justify-content-between bg-white p-2 left-box">
+                                                    <div class="text-dark">
+                                                        <img src="{{ ('frontend/images/pdf.png') }}" class="pdf-image" alt="">
+                                                        <span>CISNCO 123 WEEK 20239 </span>
+                                                    </div>
+                                                    <div class="text-white">
+                                                        <a href="" class="btn btn-primary bg-dinim text-white text-decoration-underline"> Download</a>
+                                                    </div>
+                                                </div>
+                                                <div class="d-flex justify-content-between bg-dinim-2 p-2 left-box mt-2">
+                                                    <div class="text-dark">
+                                                        <img src="{{ ('frontend/images/pdf.png') }}" class="pdf-image" alt="">
+                                                        <span>CISNCO 123 WEEK 20239 </span>
+                                                    </div>
+                                                    <div class="text-dark">
+                                                        <a href="" class="btn btn-primary bg-dinim text-white text-decoration-underline"> Download</a>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </ul>
+              </div>
+              <div
+                class="tab-pane fade"
+                id="other-reports"
+                role="tabpanel"
+                aria-labelledby="other-reports-tab"
+              >
+                <ul class="list-group mt-3">
+                    <div class="row">
+                        <div class="col-md-8 offset-2">
+                            <div class="d-flex flex-column my-4">
+                                <div class="item">
+                                    <div class="card bg-white border-card financial-card">
+                                        <div class="card-body w-100 d-flex justify-content-end align-items-center ">
+                                            <div class="d-flex flex-column w-100 p-2">
+                                                <div class="d-flex justify-content-between bg-white p-2 left-box">
+                                                    <div class="text-dark">
+                                                        <img src="{{ ('frontend/images/pdf.png') }}" class="pdf-image" alt="">
+                                                        <span>CISNCO 123 WEEK 20239 </span>
+                                                    </div>
+                                                    <div class="text-white">
+                                                        <a href="" class="btn btn-primary bg-dinim text-white text-decoration-underline"> Download</a>
+                                                    </div>
+                                                </div>
+                                                <div class="d-flex justify-content-between bg-dinim-2 p-2 left-box mt-2">
+                                                    <div class="text-dark">
+                                                        <img src="{{ ('frontend/images/pdf.png') }}" class="pdf-image" alt="">
+                                                        <span>CISNCO 123 WEEK 20239 </span>
+                                                    </div>
+                                                    <div class="text-dark">
+                                                        <a href="" class="btn btn-primary bg-dinim text-white text-decoration-underline"> Download</a>
+                                                    </div>
+                                                </div>
+                                                <div class="d-flex justify-content-between bg-white p-2 left-box">
+                                                    <div class="text-dark">
+                                                        <img src="{{ ('frontend/images/pdf.png') }}" class="pdf-image" alt="">
+                                                        <span>CISNCO 123 WEEK 20239 </span>
+                                                    </div>
+                                                    <div class="text-white">
+                                                        <a href="" class="btn btn-primary bg-dinim text-white text-decoration-underline"> Download</a>
+                                                    </div>
+                                                </div>
+                                                <div class="d-flex justify-content-between bg-dinim-2 p-2 left-box mt-2">
+                                                    <div class="text-dark">
+                                                        <img src="{{ ('frontend/images/pdf.png') }}" class="pdf-image" alt="">
+                                                        <span>CISNCO 123 WEEK 20239 </span>
+                                                    </div>
+                                                    <div class="text-dark">
+                                                        <a href="" class="btn btn-primary bg-dinim text-white text-decoration-underline"> Download</a>
+                                                    </div>
+                                                </div>
+                                                <div class="d-flex justify-content-between bg-white p-2 left-box">
+                                                    <div class="text-dark">
+                                                        <img src="{{ ('frontend/images/pdf.png') }}" class="pdf-image" alt="">
+                                                        <span>CISNCO 123 WEEK 20239 </span>
+                                                    </div>
+                                                    <div class="text-white">
+                                                        <a href="" class="btn btn-primary bg-dinim text-white text-decoration-underline"> Download</a>
+                                                    </div>
+                                                </div>
+                                                <div class="d-flex justify-content-between bg-dinim-2 p-2 left-box mt-2">
+                                                    <div class="text-dark">
+                                                        <img src="{{ ('frontend/images/pdf.png') }}" class="pdf-image" alt="">
+                                                        <span>CISNCO 123 WEEK 20239 </span>
+                                                    </div>
+                                                    <div class="text-dark">
+                                                        <a href="" class="btn btn-primary bg-dinim text-white text-decoration-underline"> Download</a>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </ul>
+              </div>
+            </div>
+          </div>
     </section><!-- End Hero -->
 
 
@@ -363,6 +846,9 @@
   <a href="#" class="back-to-top d-flex align-items-center justify-content-center"><i class="bi bi-arrow-up-short"></i></a>
 
   @include('frontend.layouts.components.script')
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
 
 </body>
 

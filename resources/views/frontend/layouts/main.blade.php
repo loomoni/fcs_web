@@ -19,6 +19,14 @@
   <!-- Vendor CSS Files -->
  @include('frontend.layouts.components.css')
 
+ <style>
+    /* Add CSS to limit the video height */
+    .modal-body video {
+        max-height: 400px; /* Adjust the max-height as needed */
+        width: auto; /* Maintain the aspect ratio */
+    }
+</style>
+
  
 </head>
 
@@ -46,7 +54,7 @@
                       <div class="carousel-item active" data-bs-interval="10000">
                           <img src="{{ url('frontend/images/tree.png') }}" class="d-block w-100" alt="...">
                           <div class="carousel-caption d-none d-md-block">
-                              <h5>Facilitate</h5>
+                              <p>Facilitate</p>
                               <p>Some representative placeholder content for the first slide.</p>
                           </div>
                       </div>
@@ -82,7 +90,7 @@
                                 <h5 class="modal-title" id="exampleModalLabel">Facilitate</h5>
                                 <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
                               </div>
-                              <div class="modal-body">
+                              <div class="modal-body" style="color: #6c757d">
                                 <p style="text-align: center">31+ million Tanzanian lives empowered</p>
                                 <p style="text-align: center">200+ billion Tanzanian shillings mobilized development actors</p>
                                 <p style="text-align: center">Resources invested in enabling more than 5,000 CSAs countrywide </p>
@@ -108,12 +116,22 @@
                                 <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
                               </div>
                               <div class="modal-body">
-                                  <p>Capacitate In publishing and graphic design, Lorem ipsum is a placeholder text commonly used.</p>
-                                  <img src="{{ url('frontend/images/Capture.jpg') }}" class="d-block w-100" alt="...">
+                                  {{-- <p>Capacitate In publishing and graphic design, Lorem ipsum is a placeholder text commonly used.</p> --}}
+                                  <p style="color: #6c757d"> <strong style="color: #006892">FCS TRUST </strong> is a development agency specialized in the provision of
+                                   advisory services in Tanzania.<br/> FCS Trust offer a wide range of tailored
+                                   solutions for the development sector, spanning from <br/> strategy  creation,
+                                    grants management, system strengthening, financial management, capacity <br/> assessment
+                                    and other consulting services for civil society organizations. We are uniquely placed <br/>
+                                    to create linkages and networks within the sector with access to hundreds of grassroot <br/>
+                                    organizations across a vast array of thematic areas both on the mainland and Zanzibar.</p>
+                                  
+                                  {{-- <img src="{{ url('frontend/images/Capture.jpg') }}" class="d-block w-100" alt="..."> --}}
+                                  <a href="https://www.fcstrust.net/">Visit FCS Trust Website</a>
                               </div>
                               <div class="modal-footer">
                                 <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
                                 {{-- <button type="button" class="btn btn-primary">Save changes</button> --}}
+                                
                               </div>
                             </div>
                           </div>
@@ -131,7 +149,13 @@
                                 <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
                               </div>
                               <div class="modal-body">
-                                  <p>Accelerate In publishing and graphic design, Lorem ipsum is a placeholder text commonly used.</p>
+                                  {{-- <p>Accelerate In publishing and graphic design, Lorem ipsum is a placeholder text commonly used.</p> --}}
+                                  {{-- <img src="{{ url('frontend/images/1.mp4') }}" class="d-block w-100" alt="..."> --}}
+                                  {{-- <source src="{{ url('frontend/images/1.mp4') }}" type="video/mp4"> --}}
+                                    <video id="videoPlayer" class="d-block w-100" controls>
+                                        <source src="{{ url('frontend/images/Foundation for Civil Society Strategic Plan for  2022 2026.mp4') }}" type="video/mp4">
+                                        Your browser does not support the video tag.
+                                      </video>
                               </div>
                               <div class="modal-footer">
                                 <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
@@ -219,6 +243,27 @@
   <a href="#" class="back-to-top d-flex align-items-center justify-content-center"><i class="bi bi-arrow-up-short"></i></a>
 
  @include('frontend.layouts.components.script')
+{{-- 
+ <script>
+    $('#videoModal').on('hide.bs.modal', function () {
+      var video = document.getElementById('videoPlayer');
+      video.pause();
+      video.currentTime = 0;
+    });
+  </script> --}}
+
+  <script>
+    $('#AccelerateModal').on('shown.bs.modal', function () {
+      var video = document.getElementById('videoPlayer');
+      video.play();
+    });
+  
+    $('#AccelerateModal').on('hidden.bs.modal', function () {
+      var video = document.getElementById('videoPlayer');
+      video.pause();
+      video.currentTime = 0;
+    });
+  </script>
 
 
 

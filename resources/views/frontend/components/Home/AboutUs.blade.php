@@ -15,7 +15,7 @@
                     <div class="row h-100">
                         <div class="col-lg-6 d-flex align-items-start justify-content-start text-dinim">
                             <div class="d-flex flex-column">
-                                <p class="who-title">
+                                <p class="who-title" style="text-align: justify;">
                                   {!! $Aboutus->description !!}
                                 </p>
 
